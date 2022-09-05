@@ -7,16 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0715541F28C677CB00E8877B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 0715541E28C677CB00E8877B /* ComposableArchitecture */; };
+		0715542328C6781B00E8877B /* DashboardViewDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542228C6781B00E8877B /* DashboardViewDomain.swift */; };
+		0715542728C6785600E8877B /* StateDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542628C6785600E8877B /* StateDashboard.swift */; };
+		0715542928C6786E00E8877B /* ActionDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542828C6786E00E8877B /* ActionDashboard.swift */; };
+		0715542B28C6787900E8877B /* EnvironmentDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542A28C6787900E8877B /* EnvironmentDashboard.swift */; };
+		0715542D28C6788200E8877B /* ReducerDashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542C28C6788200E8877B /* ReducerDashboard.swift */; };
 		CEBC21DB28C4C92700C06630 /* PharmacyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21DA28C4C92700C06630 /* PharmacyApp.swift */; };
-		CEBC21DD28C4C92700C06630 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21DC28C4C92700C06630 /* ContentView.swift */; };
 		CEBC21DF28C4C92900C06630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC21DE28C4C92900C06630 /* Assets.xcassets */; };
 		CEBC21E228C4C92900C06630 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC21E128C4C92900C06630 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0715542228C6781B00E8877B /* DashboardViewDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewDomain.swift; sourceTree = "<group>"; };
+		0715542628C6785600E8877B /* StateDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDashboard.swift; sourceTree = "<group>"; };
+		0715542828C6786E00E8877B /* ActionDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionDashboard.swift; sourceTree = "<group>"; };
+		0715542A28C6787900E8877B /* EnvironmentDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentDashboard.swift; sourceTree = "<group>"; };
+		0715542C28C6788200E8877B /* ReducerDashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerDashboard.swift; sourceTree = "<group>"; };
 		CEBC21D728C4C92700C06630 /* Pharmacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pharmacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC21DA28C4C92700C06630 /* PharmacyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyApp.swift; sourceTree = "<group>"; };
-		CEBC21DC28C4C92700C06630 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEBC21DE28C4C92900C06630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEBC21E128C4C92900C06630 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -26,12 +35,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0715541F28C677CB00E8877B /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0715542028C677DB00E8877B /* DashboardDomain */ = {
+			isa = PBXGroup;
+			children = (
+				0715542428C6781F00E8877B /* Views */,
+				0715542628C6785600E8877B /* StateDashboard.swift */,
+				0715542828C6786E00E8877B /* ActionDashboard.swift */,
+				0715542A28C6787900E8877B /* EnvironmentDashboard.swift */,
+				0715542C28C6788200E8877B /* ReducerDashboard.swift */,
+			);
+			path = DashboardDomain;
+			sourceTree = "<group>";
+		};
+		0715542428C6781F00E8877B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0715542228C6781B00E8877B /* DashboardViewDomain.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CEBC21CE28C4C92700C06630 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +81,8 @@
 		CEBC21D928C4C92700C06630 /* Pharmacy */ = {
 			isa = PBXGroup;
 			children = (
+				0715542028C677DB00E8877B /* DashboardDomain */,
 				CEBC21DA28C4C92700C06630 /* PharmacyApp.swift */,
-				CEBC21DC28C4C92700C06630 /* ContentView.swift */,
 				CEBC21DE28C4C92900C06630 /* Assets.xcassets */,
 				CEBC21E028C4C92900C06630 /* Preview Content */,
 			);
@@ -83,6 +113,9 @@
 			dependencies = (
 			);
 			name = Pharmacy;
+			packageProductDependencies = (
+				0715541E28C677CB00E8877B /* ComposableArchitecture */,
+			);
 			productName = Pharmacy;
 			productReference = CEBC21D728C4C92700C06630 /* Pharmacy.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,9 @@
 				Base,
 			);
 			mainGroup = CEBC21CE28C4C92700C06630;
+			packageReferences = (
+				0715541D28C677CB00E8877B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = CEBC21D828C4C92700C06630 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBC21DD28C4C92700C06630 /* ContentView.swift in Sources */,
 				CEBC21DB28C4C92700C06630 /* PharmacyApp.swift in Sources */,
+				0715542B28C6787900E8877B /* EnvironmentDashboard.swift in Sources */,
+				0715542328C6781B00E8877B /* DashboardViewDomain.swift in Sources */,
+				0715542D28C6788200E8877B /* ReducerDashboard.swift in Sources */,
+				0715542928C6786E00E8877B /* ActionDashboard.swift in Sources */,
+				0715542728C6785600E8877B /* StateDashboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,11 +307,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pharmacy/Preview Content\"";
+				DEVELOPMENT_TEAM = 67QY3Y2G3B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -295,11 +337,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Pharmacy/Preview Content\"";
+				DEVELOPMENT_TEAM = 67QY3Y2G3B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -337,6 +381,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0715541D28C677CB00E8877B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0715541E28C677CB00E8877B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0715541D28C677CB00E8877B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEBC21CF28C4C92700C06630 /* Project object */;
 }
