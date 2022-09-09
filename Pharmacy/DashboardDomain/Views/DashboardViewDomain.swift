@@ -10,13 +10,15 @@ import ComposableArchitecture
 
 struct DashboardViewDomain: View {
     
+    let summerGreen = Color(red: 0.57, green: 0.74, blue: 0.69)
+    
     // MARK: Properties
 
-    let store: Store<StateDashboard, ActionDashboard>
+    let store: Store<DashboardState, DashboardAction>
 
     // MARK: Initialization
 
-    public init(store: Store<StateDashboard, ActionDashboard>) {
+    public init(store: Store<DashboardState, DashboardAction>) {
         self.store = store
     }
     
@@ -25,6 +27,9 @@ struct DashboardViewDomain: View {
             VStack {
                 navigationBar
                 Spacer()
+                Spacer()
+                Spacer()
+
                 dashboard
                 
             }
@@ -42,16 +47,19 @@ struct DashboardViewDomain: View {
                 Image(systemName: "doc")
                     .resizable()
                     .frame(width: 50, height: 60, alignment: .center)
+                    .foregroundColor(.black)
                 
                 Spacer()
                 
                 Text(title)
                     .font(.system(size: 30))
                     .fontWeight(.bold)
+                    .foregroundColor(.black)
                 
                 Text("Subtitle")
                     .font(.system(size: 20))
                     .fontWeight(.medium)
+                    .foregroundColor(.black)
             }
             .padding(35)
             .frame(width: 250, height: 250, alignment: .center)
@@ -81,6 +89,19 @@ struct DashboardViewDomain: View {
                     }
 
                 }
+                HStack(spacing: 100) {
+                    
+                    buildButton(title: "Storage") {
+                        viewStore.send(.storageButtonTapped)
+                        
+                    }
+                    
+                    buildButton(title: "Drugs") {
+                        viewStore.send(.drugsButtonTapped)
+                        
+                    }
+                    
+                }
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
@@ -94,27 +115,29 @@ struct DashboardViewDomain: View {
         WithViewStore(store) { viewStore in
             HStack {
                 // TODO: Sasha | replace by logo image
-                Image(systemName: "person")
+                Image("logo")
                     .resizable()
-                    .frame(width: 50, height: 50, alignment: .center)
+                    .frame(width: 70, height: 80, alignment:.center)
+                    .background(Color.white)
+                    .shadow(radius: 0)
                 
                 Spacer()
                 
                 VStack(alignment: .leading) {
-                    Text(viewStore.state.selectedCell)
+                    Text("Головні новини")
                         .font(.system(size: 25))
                         .fontWeight(.medium)
                        
-                    Text("News News News News News News News News News")
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
                 }
                 .padding()
                 
                 Spacer()
             }
-            .padding(.leading, 100)
+            .padding(.leading, 60)
             .frame(maxWidth: .infinity, maxHeight: 80, alignment: .center)
-            .background(Color.cyan)
-            .shadow(radius: 2)
+            .background(Color.init(red: 0.57, green: 0.74, blue: 0.69))
+            .shadow(radius: 7)
         }
 
     }
@@ -124,9 +147,9 @@ struct DashboardViewDomain: View {
 struct DashboardViewDomain_Previews: PreviewProvider {
     static var previews: some View {
         DashboardViewDomain(store: Store(
-            initialState: StateDashboard(),
+            initialState: DashboardState(),
             reducer: reducer,
-            environment: EnvironmentDashboard(mainQueue: .main)
+            environment: DashboardEnvironment(mainQueue: .main)
         ))
         .previewInterfaceOrientation(.landscapeRight)
     }

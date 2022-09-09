@@ -7,14 +7,18 @@
 
 import SwiftUI
 import ComposableArchitecture
+import FirebaseCore
+
 
 @main
 struct PharmacyApp: App {
     
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     let store = ComposableArchitecture.Store(
-        initialState: StateDashboard(),
+        initialState: DashboardState(),
         reducer: reducer,
-        environment: EnvironmentDashboard(
+        environment: DashboardEnvironment(
             mainQueue: .main
         )
     )

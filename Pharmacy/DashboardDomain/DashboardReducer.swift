@@ -6,10 +6,11 @@
 //
 
 import ComposableArchitecture
+import SwiftUI
 
-public typealias ReducerDashboard = ComposableArchitecture.Reducer<StateDashboard, ActionDashboard, EnvironmentDashboard>
+public typealias DashboardReducer = ComposableArchitecture.Reducer<DashboardState, DashboardAction, DashboardEnvironment>
 
-public let reducer = ReducerDashboard.combine(
+public let reducer = DashboardReducer.combine(
     Reducer { state, action, environment in
         switch action {
         case .initialize:
@@ -22,6 +23,12 @@ public let reducer = ReducerDashboard.combine(
             return .none
         case .gmailButtonTapped:
             state.selectedCell = "Gmail selected"
+            return .none
+        case .storageButtonTapped:
+            state.selectedCell = "Storage selected"
+            return .none
+        case .drugsButtonTapped:
+            state.selectedCell = "drugs selected"
             return .none
         }
     }

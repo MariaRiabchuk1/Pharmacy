@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct StateDashboard: Equatable {
+public struct DashboardState: Equatable {
     // MARK: - Properties
     
     public var selectedCell: String = ""

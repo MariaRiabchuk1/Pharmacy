@@ -8,7 +8,7 @@
 import Foundation
 import ComposableArchitecture
 
-public enum ActionDashboard: Equatable {
+public enum DashboardAction: Equatable {
     
     case initialize
     
@@ -17,5 +17,7 @@ public enum ActionDashboard: Equatable {
     case medicsButtonTapped
     case googleButtonTapped
     case gmailButtonTapped
+    case storageButtonTapped
+    case drugsButtonTapped
     
 }

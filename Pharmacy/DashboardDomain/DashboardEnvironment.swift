@@ -9,7 +9,7 @@ import ComposableArchitecture
 import Combine
 import Foundation
 
-public class EnvironmentDashboard {
+public class DashboardEnvironment {
     // MARK: Properties
 
     public let mainQueue: AnySchedulerOf<DispatchQueue>
