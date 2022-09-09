@@ -15,21 +15,38 @@ public let reducer = DashboardReducer.combine(
         switch action {
         case .initialize:
             return .none
+        case .dismiss(let isActive):
+            state.isWebApplicationActive = isActive
+            return .none
         case .medicsButtonTapped:
-            state.selectedCell = "Medics selected"
+            guard let url = URL(string: "https://medics.ua") else { return .none }
+            state.webApplicationState.currentURL = url
+            state.isWebApplicationActive = true
             return .none
         case .googleButtonTapped:
-            state.selectedCell = "Google selected"
+            guard let url = URL(string: "https://google.com") else { return .none }
+            state.webApplicationState.currentURL = url
+            state.isWebApplicationActive = true
             return .none
         case .gmailButtonTapped:
-            state.selectedCell = "Gmail selected"
+            guard let url = URL(string: "https://www.knp-rakhiv-rl.com.ua") else { return .none }
+            state.webApplicationState.currentURL = url
+            state.isWebApplicationActive = true
             return .none
         case .storageButtonTapped:
-            state.selectedCell = "Storage selected"
             return .none
         case .drugsButtonTapped:
-            state.selectedCell = "drugs selected"
+            return .none
+        case .webApplicationAction(let action):
             return .none
         }
-    }
+    },
+    
+    webApplicationReducer
+        .pullback(state: \.webApplicationState,
+                  action: /DashboardAction.webApplicationAction,
+                  environment: {
+                      .init(mainQueue: $0.mainQueue)
+                  })
+    
 ).debug()

@@ -26,13 +26,12 @@ struct PharmacyApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView {
+//            NavigationView {
                 DashboardViewDomain(store: store)
-            }
-            .navigationBarTitle("", displayMode: .inline)
-            .navigationBarHidden(true)
-            .navigationViewStyle(.stack)
-            
+//            }
+//            .navigationBarTitle("", displayMode: .automatic)
+//            .navigationBarHidden(true)
+//            .navigationViewStyle(.stack)
         }
     }
 }

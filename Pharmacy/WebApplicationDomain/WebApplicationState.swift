@@ -10,6 +10,7 @@ import Foundation
 public struct WebApplicationState: Equatable {
     // MARK: - Properties
     
+    var currentURL: URL?
 
     // MARK: States
 

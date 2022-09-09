@@ -11,8 +11,12 @@ public struct DashboardState: Equatable {
     // MARK: - Properties
     
     public var selectedCell: String = ""
+    
+    public var isWebApplicationActive = false
 
     // MARK: States
 
+    public var webApplicationState = WebApplicationState()
+    
     public init() {}
 }

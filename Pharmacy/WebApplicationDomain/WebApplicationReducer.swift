@@ -15,7 +15,6 @@ public let webApplicationReducer = WebApplicationReducer.combine(
         switch action {
         case .initialize:
             return .none
-
         }
     }
 ).debug()

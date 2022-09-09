@@ -11,6 +11,7 @@ import ComposableArchitecture
 public enum DashboardAction: Equatable {
     
     case initialize
+    case dismiss(Bool)
     
     // MARK: User interaction
     
@@ -19,5 +20,7 @@ public enum DashboardAction: Equatable {
     case gmailButtonTapped
     case storageButtonTapped
     case drugsButtonTapped
+    
+    case webApplicationAction(WebApplicationAction)
     
 }
