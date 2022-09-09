@@ -14,13 +14,58 @@ import FirebaseFirestore
 
 class APIManager {
     
-    static let shared = APIManager()
-    private func configureFB() -> Firestore {
-        var db: Firestore!
-        let settings = FirestoreSettings()
-        Firestore.firestore().settings = settings
+    let db: Firestore?
+    
+    init() {
         db = Firestore.firestore()
-        return db
+        db?.settings = FirestoreSettings()
     }
+//
+//    func readDataFromFB() -> [Drugs] {
+//        db?.collection("pharmacyDrugs").getDocuments(completion: { [weak self] querySnapshot, error in
+//            guard let self = self,
+//                  let documents = querySnapshot?.documents else { return }
+//
+//            return drugs = documents.compactMap {
+//                Drugs(name: $0.data()["name"] as? String ?? "",
+//                      image: $0.data()["image"] as? String ?? "",
+//                      description: $0.data()["description"] as? String ?? "",
+//                      count: $0.data()["count"] as? Int ?? 0)
+//            }
+//        })
+//    }
+    
+    func fetchDrugs() async throws -> [Drugs] {
+        let snapshot = try await db?.collection("pharmacyDrugs").getDocuments()
+        
+        return snapshot?.documents.compactMap {
+            Drugs(name: $0.data()["name"] as? String ?? "",
+                  image: $0.data()["image"] as? String ?? "",
+                  description: $0.data()["description"] as? String ?? "",
+                  count: $0.data()["count"] as? Int ?? 0)
+        } ?? []
+    }
+    
+    func write(name: String, image: String, description: String, count: Int) {
+        db?.collection("pharmacyDrugs").document(name).setData([
+            "name": name,
+            "image": image,
+            "description": description,
+            "count": count
+        ])
+    }
+}
 
+public struct Drugs: Equatable, Hashable {
+    let name: String
+    let image: String
+    let description: String
+    let count: Int
+    
+    public init(name: String, image: String, description: String, count: Int) {
+        self.name = name
+        self.image = image
+        self.description = description
+        self.count = count
+    }
 }

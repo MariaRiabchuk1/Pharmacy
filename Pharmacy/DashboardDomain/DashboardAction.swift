@@ -11,7 +11,9 @@ import ComposableArchitecture
 public enum DashboardAction: Equatable {
     
     case initialize
-    case dismiss(Bool)
+    case dismissWebView(Bool)
+    case dismissStorage(Bool)
+    case setDrugs([Drugs])
     
     // MARK: User interaction
     
@@ -22,5 +24,6 @@ public enum DashboardAction: Equatable {
     case drugsButtonTapped
     
     case webApplicationAction(WebApplicationAction)
+    case storageAction(StorageAction)
     
 }

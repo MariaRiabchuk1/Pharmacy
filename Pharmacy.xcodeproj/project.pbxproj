@@ -14,6 +14,11 @@
 		0715542D28C6788200E8877B /* DashboardReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542C28C6788200E8877B /* DashboardReducer.swift */; };
 		071ABEF228CBB90600E769E8 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF128CBB90600E769E8 /* SafariView.swift */; };
 		071ABEF528CBBA3D00E769E8 /* Color+customColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF428CBBA3D00E769E8 /* Color+customColor.swift */; };
+		071ABEF828CBD33800E769E8 /* StorageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF728CBD33800E769E8 /* StorageState.swift */; };
+		071ABEFA28CBD34100E769E8 /* StorageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF928CBD34100E769E8 /* StorageAction.swift */; };
+		071ABEFC28CBD34C00E769E8 /* StorageEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEFB28CBD34C00E769E8 /* StorageEnvironment.swift */; };
+		071ABEFE28CBD35500E769E8 /* StorageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEFD28CBD35500E769E8 /* StorageReducer.swift */; };
+		071ABF0128CBD4C400E769E8 /* StorageDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0028CBD4C400E769E8 /* StorageDomainView.swift */; };
 		0727E37A28CBB892009020DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0727E37928CBB892009020DD /* GoogleService-Info.plist */; };
 		CEB5AD1F28CA0A2400579BAB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD1E28CA0A2400579BAB /* ComposableArchitecture */; };
 		CEB5AD2428CA0CB700579BAB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2328CA0CB700579BAB /* FirebaseAnalytics */; };
@@ -41,6 +46,11 @@
 		0715542C28C6788200E8877B /* DashboardReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardReducer.swift; sourceTree = "<group>"; };
 		071ABEF128CBB90600E769E8 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		071ABEF428CBBA3D00E769E8 /* Color+customColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+customColor.swift"; sourceTree = "<group>"; };
+		071ABEF728CBD33800E769E8 /* StorageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageState.swift; sourceTree = "<group>"; };
+		071ABEF928CBD34100E769E8 /* StorageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAction.swift; sourceTree = "<group>"; };
+		071ABEFB28CBD34C00E769E8 /* StorageEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageEnvironment.swift; sourceTree = "<group>"; };
+		071ABEFD28CBD35500E769E8 /* StorageReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageReducer.swift; sourceTree = "<group>"; };
+		071ABF0028CBD4C400E769E8 /* StorageDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDomainView.swift; sourceTree = "<group>"; };
 		0727E37928CBB892009020DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEB5AD2928CA0DF700579BAB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CEBC21D728C4C92700C06630 /* Pharmacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pharmacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +110,26 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		071ABEF628CBD32500E769E8 /* StorageDomain */ = {
+			isa = PBXGroup;
+			children = (
+				071ABEFF28CBD4B400E769E8 /* Views */,
+				071ABEF728CBD33800E769E8 /* StorageState.swift */,
+				071ABEF928CBD34100E769E8 /* StorageAction.swift */,
+				071ABEFB28CBD34C00E769E8 /* StorageEnvironment.swift */,
+				071ABEFD28CBD35500E769E8 /* StorageReducer.swift */,
+			);
+			path = StorageDomain;
+			sourceTree = "<group>";
+		};
+		071ABEFF28CBD4B400E769E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				071ABF0028CBD4C400E769E8 /* StorageDomainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CEB5AD1D28CA0A2400579BAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +157,7 @@
 		CEBC21D928C4C92700C06630 /* Pharmacy */ = {
 			isa = PBXGroup;
 			children = (
+				071ABEF628CBD32500E769E8 /* StorageDomain */,
 				071ABEF328CBBA1F00E769E8 /* Extensions */,
 				0727E37928CBB892009020DD /* GoogleService-Info.plist */,
 				CEBC21FA28C9D87900C06630 /* WebApplicationDomain */,
@@ -255,18 +286,23 @@
 			files = (
 				CEBC21FC28C9D8CE00C06630 /* WebApplicationState.swift in Sources */,
 				CEBC21F528C9D1AC00C06630 /* AppDelegate.swift in Sources */,
+				071ABF0128CBD4C400E769E8 /* StorageDomainView.swift in Sources */,
 				CEBC220228C9D92F00C06630 /* WebApplicationReducer.swift in Sources */,
+				071ABEF828CBD33800E769E8 /* StorageState.swift in Sources */,
 				071ABEF228CBB90600E769E8 /* SafariView.swift in Sources */,
 				CEBC21DB28C4C92700C06630 /* PharmacyApp.swift in Sources */,
 				CEBC220028C9D8FF00C06630 /* WebApplicationEnvironment.swift in Sources */,
+				071ABEFC28CBD34C00E769E8 /* StorageEnvironment.swift in Sources */,
 				CEBC21FE28C9D8E900C06630 /* WebApplicationAction.swift in Sources */,
 				0715542B28C6787900E8877B /* DashboardEnvironment.swift in Sources */,
 				0715542328C6781B00E8877B /* DashboardViewDomain.swift in Sources */,
 				0715542D28C6788200E8877B /* DashboardReducer.swift in Sources */,
 				0715542928C6786E00E8877B /* DashboardAction.swift in Sources */,
+				071ABEFE28CBD35500E769E8 /* StorageReducer.swift in Sources */,
 				071ABEF528CBBA3D00E769E8 /* Color+customColor.swift in Sources */,
 				CEB5AD2A28CA0DF700579BAB /* APIManager.swift in Sources */,
 				0715542728C6785600E8877B /* DashboardState.swift in Sources */,
+				071ABEFA28CBD34100E769E8 /* StorageAction.swift in Sources */,
 				CEBC21F928C9D87400C06630 /* WebApplicationDomainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

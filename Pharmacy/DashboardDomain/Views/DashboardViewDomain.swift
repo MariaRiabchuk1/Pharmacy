@@ -29,11 +29,20 @@ struct DashboardViewDomain: View {
 
                 dashboard
                 
+
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             .background(Color.white)
+            .onAppear {
+                viewStore.send(.initialize)
+            }
+            .fullScreenCover(isPresented: viewStore.binding(get: \.isStorageActive,
+                                                           send: DashboardAction.dismissStorage)) {
+                StorageDomainView(store: self.store.scope(state: \.storageState,
+                                                                 action: DashboardAction.storageAction))
+            }
             .fullScreenCover(isPresented: viewStore.binding(get: \.isWebApplicationActive,
-                                                           send: DashboardAction.dismiss)) {
+                                                           send: DashboardAction.dismissWebView)) {
                 WebApplicationDomainView(store: self.store.scope(state: \.webApplicationState,
                                                                  action: DashboardAction.webApplicationAction))
             }
