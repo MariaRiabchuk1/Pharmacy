@@ -43,7 +43,8 @@ struct AuthDomainView: View {
                 .frame(width: 200, height: 50, alignment: .center)
                 .textFieldStyle(.roundedBorder)
                 
-                TextField(
+                
+                SecureField(
                     "Пароль",
                     text: viewStore.binding(
                         get: \.passwordQuery, send: AuthAction.passwordQueryChanged
@@ -62,7 +63,7 @@ struct AuthDomainView: View {
                 } label: {
                     Text("Логін")
                         .frame(width: 100, height: 50, alignment: .center)
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.primary)
                         .background(Color.green)
                         .cornerRadius(10)
                 }
