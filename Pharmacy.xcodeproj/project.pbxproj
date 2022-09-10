@@ -21,6 +21,11 @@
 		071ABF0128CBD4C400E769E8 /* StorageDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0028CBD4C400E769E8 /* StorageDomainView.swift */; };
 		071ABF0428CD11F200E769E8 /* Drugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0328CD11F200E769E8 /* Drugs.swift */; };
 		071ABF0628CD120B00E769E8 /* Departments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0528CD120B00E769E8 /* Departments.swift */; };
+		071ABF0A28CD224700E769E8 /* DrugState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0928CD224700E769E8 /* DrugState.swift */; };
+		071ABF0C28CD224F00E769E8 /* DrugAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0B28CD224F00E769E8 /* DrugAction.swift */; };
+		071ABF0E28CD225800E769E8 /* DrugEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0D28CD225800E769E8 /* DrugEnvironment.swift */; };
+		071ABF1028CD226300E769E8 /* DrugReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0F28CD226300E769E8 /* DrugReducer.swift */; };
+		071ABF1228CD267C00E769E8 /* DrugDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF1128CD267C00E769E8 /* DrugDomainView.swift */; };
 		0727E37A28CBB892009020DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0727E37928CBB892009020DD /* GoogleService-Info.plist */; };
 		CEB5AD1F28CA0A2400579BAB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD1E28CA0A2400579BAB /* ComposableArchitecture */; };
 		CEB5AD2428CA0CB700579BAB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2328CA0CB700579BAB /* FirebaseAnalytics */; };
@@ -56,6 +61,11 @@
 		071ABF0328CD11F200E769E8 /* Drugs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drugs.swift; sourceTree = "<group>"; };
 		071ABF0528CD120B00E769E8 /* Departments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departments.swift; sourceTree = "<group>"; };
 		071ABF0728CD1C4800E769E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		071ABF0928CD224700E769E8 /* DrugState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugState.swift; sourceTree = "<group>"; };
+		071ABF0B28CD224F00E769E8 /* DrugAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugAction.swift; sourceTree = "<group>"; };
+		071ABF0D28CD225800E769E8 /* DrugEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugEnvironment.swift; sourceTree = "<group>"; };
+		071ABF0F28CD226300E769E8 /* DrugReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugReducer.swift; sourceTree = "<group>"; };
+		071ABF1128CD267C00E769E8 /* DrugDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugDomainView.swift; sourceTree = "<group>"; };
 		0727E37928CBB892009020DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEB5AD2928CA0DF700579BAB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CEBC21D728C4C92700C06630 /* Pharmacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pharmacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +154,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		071ABF0828CD223200E769E8 /* DrugDomain */ = {
+			isa = PBXGroup;
+			children = (
+				071ABF0928CD224700E769E8 /* DrugState.swift */,
+				071ABF0B28CD224F00E769E8 /* DrugAction.swift */,
+				071ABF0D28CD225800E769E8 /* DrugEnvironment.swift */,
+				071ABF0F28CD226300E769E8 /* DrugReducer.swift */,
+				071ABF1128CD267C00E769E8 /* DrugDomainView.swift */,
+			);
+			path = DrugDomain;
+			sourceTree = "<group>";
+		};
 		CEB5AD1D28CA0A2400579BAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +193,7 @@
 		CEBC21D928C4C92700C06630 /* Pharmacy */ = {
 			isa = PBXGroup;
 			children = (
+				071ABF0828CD223200E769E8 /* DrugDomain */,
 				071ABF0728CD1C4800E769E8 /* Info.plist */,
 				071ABF0228CD11BD00E769E8 /* Models */,
 				071ABEF628CBD32500E769E8 /* StorageDomain */,
@@ -311,15 +334,20 @@
 				071ABF0428CD11F200E769E8 /* Drugs.swift in Sources */,
 				071ABF0628CD120B00E769E8 /* Departments.swift in Sources */,
 				071ABEFC28CBD34C00E769E8 /* StorageEnvironment.swift in Sources */,
+				071ABF0C28CD224F00E769E8 /* DrugAction.swift in Sources */,
 				CEBC21FE28C9D8E900C06630 /* WebApplicationAction.swift in Sources */,
 				0715542B28C6787900E8877B /* DashboardEnvironment.swift in Sources */,
 				0715542328C6781B00E8877B /* DashboardViewDomain.swift in Sources */,
 				0715542D28C6788200E8877B /* DashboardReducer.swift in Sources */,
 				0715542928C6786E00E8877B /* DashboardAction.swift in Sources */,
 				071ABEFE28CBD35500E769E8 /* StorageReducer.swift in Sources */,
+				071ABF0E28CD225800E769E8 /* DrugEnvironment.swift in Sources */,
 				071ABEF528CBBA3D00E769E8 /* Color+customColor.swift in Sources */,
 				CEB5AD2A28CA0DF700579BAB /* APIManager.swift in Sources */,
 				0715542728C6785600E8877B /* DashboardState.swift in Sources */,
+				071ABF1028CD226300E769E8 /* DrugReducer.swift in Sources */,
+				071ABF1228CD267C00E769E8 /* DrugDomainView.swift in Sources */,
+				071ABF0A28CD224700E769E8 /* DrugState.swift in Sources */,
 				071ABEFA28CBD34100E769E8 /* StorageAction.swift in Sources */,
 				CEBC21F928C9D87400C06630 /* WebApplicationDomainView.swift in Sources */,
 			);

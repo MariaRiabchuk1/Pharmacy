@@ -11,6 +11,13 @@ import SwiftUI
 public typealias StorageReducer = ComposableArchitecture.Reducer<StorageState, StorageAction, StorageEnvironment>
 
 public let storageReducer = StorageReducer.combine(
+    
+    drugReducer.forEach(state: \.drugsState,
+                        action: /StorageAction.drugsAction(index: action:),
+                        environment: {
+                            .init(mainQueue: $0.mainQueue)
+                        }),
+    
     Reducer { state, action, environment in
         switch action {
         case .initialize:
@@ -25,17 +32,19 @@ public let storageReducer = StorageReducer.combine(
                 }
             }
         case .setDrugs(let drugs):
-            state.drugs = drugs
+            
+            let drugsState: [DrugState] = drugs.map {
+                .init(drug: $0)
+            }
+            
+            state.drugsState = drugsState
             return .none
         case .closeStorage:
             return .none
         case .searchTextChange(let text):
-            let filterdDrugs = state.drugs.filter { $0.name.contains(text) }
-            if text.isEmpty {
-                return Effect(value: .setDrugs(state.drugs))
-            } else {
-                return Effect(value: .setDrugs(filterdDrugs))
-            }
+            return .none
+        case .drugsAction(index: let index, action: let action):
+            return .none
         }
     }
 ).debug()

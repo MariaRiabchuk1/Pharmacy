@@ -62,6 +62,8 @@ public let reducer = DashboardReducer.combine(
                 return .none
             case .searchTextChange(_):
                 return .none
+            case .drugsAction(index: let index, action: let action):
+                return .none
             }
             return .none
         case .dismissStorage(let isActive):

@@ -14,8 +14,9 @@ public enum StorageAction: Equatable {
     case setDrugs([Drugs])
     
     // MARK: User interaction
-    
     case searchTextChange(String)
+    
+    case drugsAction(index: Int, action: DrugAction)
     
     case closeStorage
 }

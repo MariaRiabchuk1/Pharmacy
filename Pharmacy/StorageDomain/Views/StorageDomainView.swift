@@ -23,14 +23,11 @@ struct StorageDomainView: View {
             NavigationView {
                 VStack {
                     List {
-                        ForEach(viewStore.state.drugs, id: \.self) {
-                                Text($0.name)
-                                
-                                Text($0.description)
-                                
-                                if let url = URL(string: $0.image) {
-                                    AsyncImage(url: url)
-                                }
+                        ForEachStore(
+                            store.scope(state: \.drugsState,
+                                        action: StorageAction.drugsAction(index: action:))
+                        ) {
+                            DrugDomainView(store: $0)
                         }
                     }
                     .searchable(text: viewStore.binding(get: \.searchText, send: StorageAction.searchTextChange))

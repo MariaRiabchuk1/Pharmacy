@@ -11,7 +11,7 @@ public struct StorageState: Equatable {
     
     // MARK: - Properties
     
-    public var drugs: [Drugs] = []
+    public var drugsState = [DrugState]()
     public var searchText: String = ""
     
     // MARK: States
