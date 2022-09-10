@@ -24,7 +24,13 @@ struct StorageDomainView: View {
                 VStack {
                     List {
                         ForEach(viewStore.state.drugs, id: \.self) {
-                            Text("\($0.name)")
+                                Text($0.name)
+                                
+                                Text($0.description)
+                                
+                                if let url = URL(string: $0.image) {
+                                    AsyncImage(url: url)
+                                }
                         }
                     }
                     .searchable(text: viewStore.binding(get: \.searchText, send: StorageAction.searchTextChange))
@@ -45,6 +51,21 @@ struct StorageDomainView: View {
                     viewStore.send(.initialize)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            }
+        }
+    }
+}
+    
+
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
             }
         }
     }
