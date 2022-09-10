@@ -27,7 +27,7 @@ struct AuthDomainView: View {
                     .shadow(radius: 0)
                     .padding()
                 
-                Text("Log in")
+                Text("Логін")
                     .font(.system(size: 30))
                 
                 Spacer()
@@ -43,7 +43,6 @@ struct AuthDomainView: View {
                 .frame(width: 200, height: 50, alignment: .center)
                 .textFieldStyle(.roundedBorder)
                 
-                
                 SecureField(
                     "Пароль",
                     text: viewStore.binding(
@@ -55,7 +54,6 @@ struct AuthDomainView: View {
                 .frame(width: 200, height: 50, alignment: .center)
                 .textFieldStyle(.roundedBorder)
                 
-                
                 Spacer()
                 
                 Button {
@@ -63,8 +61,8 @@ struct AuthDomainView: View {
                 } label: {
                     Text("Логін")
                         .frame(width: 100, height: 50, alignment: .center)
-                        .foregroundColor(Color.primary)
-                        .background(Color.green)
+                        .foregroundColor(Color.white)
+                        .background(Color.summerGreen)
                         .cornerRadius(10)
                 }
                 .alert(
@@ -74,10 +72,11 @@ struct AuthDomainView: View {
                 Spacer()
             }
             .frame(maxWidth: UIScreen.main.bounds.width / 2, maxHeight: .infinity, alignment: .center)
+           
             .background(Color.white)
-            .padding()
-            .cornerRadius(10)
-            .shadow(radius: 20)
+            .cornerRadius(20)
+            .padding(30)
+            .shadow(radius: 10)
             
             .fullScreenCover(isPresented: viewStore.binding(get: \.isUserValid,
                                                             send: AuthAction.dismiss)) {
@@ -87,6 +86,8 @@ struct AuthDomainView: View {
             }
             
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+        .background(Color.summerGreen)
         
     }
 }
