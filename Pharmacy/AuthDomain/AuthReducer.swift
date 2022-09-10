@@ -25,8 +25,7 @@ public let authReducer = AuthReducer.combine(
                     let user = try await AuthService().logIn(email: email, password: password)
                     return .successLogedIn(user)
                 } catch {
-                    // error
-                    return .initialize
+                    return .failedLogedIn
                 }
                
             }
@@ -43,6 +42,13 @@ public let authReducer = AuthReducer.combine(
             return .none
         case .passwordQueryChanged(let query):
             state.passwordQuery = query
+            return .none
+        case .failedLogedIn:
+            state.alert = AlertState(title: .init("Frong user"), message: .init("Frong user"), dismissButton: .default(.init("Cancel"), send: .alertConfirmTapped))
+            
+            return .none
+        case .alertConfirmTapped:
+            state.alert = nil
             return .none
         }
     },

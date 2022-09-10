@@ -20,9 +20,11 @@ public enum AuthAction: Equatable {
     case passwordQueryChanged(String)
     
     // States
+    case alertConfirmTapped
     
     case dashboardAction(DashboardAction)
     
     case successLogedIn(User)
+    case failedLogedIn
     
 }

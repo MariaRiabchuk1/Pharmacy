@@ -66,6 +66,10 @@ struct AuthDomainView: View {
                         .background(Color.green)
                         .cornerRadius(10)
                 }
+                .alert(
+                    self.store.scope(state: \.alert),
+                    dismiss: .alertConfirmTapped
+                  )
                 Spacer()
             }
             .frame(maxWidth: UIScreen.main.bounds.width / 2, maxHeight: .infinity, alignment: .center)

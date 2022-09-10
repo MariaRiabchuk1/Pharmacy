@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ComposableArchitecture
 
 public struct AuthState: Equatable {
     
@@ -15,6 +16,8 @@ public struct AuthState: Equatable {
     
     public var emailQuery = ""
     public var passwordQuery = ""
+    
+    public var alert: AlertState<AuthAction>?
     
     // MARK: States
     
