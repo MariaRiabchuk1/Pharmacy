@@ -20,20 +20,6 @@ class APIManager {
         db = Firestore.firestore()
         db?.settings = FirestoreSettings()
     }
-//
-//    func readDataFromFB() -> [Drugs] {
-//        db?.collection("pharmacyDrugs").getDocuments(completion: { [weak self] querySnapshot, error in
-//            guard let self = self,
-//                  let documents = querySnapshot?.documents else { return }
-//
-//            return drugs = documents.compactMap {
-//                Drugs(name: $0.data()["name"] as? String ?? "",
-//                      image: $0.data()["image"] as? String ?? "",
-//                      description: $0.data()["description"] as? String ?? "",
-//                      count: $0.data()["count"] as? Int ?? 0)
-//            }
-//        })
-//    }
     
     func fetchDrugs() async throws -> [Drugs] {
         let snapshot = try await db?.collection("pharmacyDrugs").getDocuments()

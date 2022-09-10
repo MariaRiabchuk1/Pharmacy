@@ -16,9 +16,9 @@ struct PharmacyApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
     let store = ComposableArchitecture.Store(
-        initialState: DashboardState(),
-        reducer: reducer,
-        environment: DashboardEnvironment(
+        initialState: AuthState(),
+        reducer: authReducer,
+        environment: .init(
             mainQueue: .main
         )
     )
@@ -27,7 +27,8 @@ struct PharmacyApp: App {
     var body: some Scene {
         WindowGroup {
 //            NavigationView {
-                DashboardViewDomain(store: store)
+                AuthDomainView(store: store)
+//                DashboardViewDomain(store: store)
 //            }
 //            .navigationBarTitle("", displayMode: .automatic)
 //            .navigationBarHidden(true)
