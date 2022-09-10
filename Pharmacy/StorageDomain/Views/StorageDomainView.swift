@@ -31,13 +31,13 @@ struct StorageDomainView: View {
                         }
                     }
                     .searchable(text: viewStore.binding(get: \.searchText, send: StorageAction.searchTextChange))
-                    .navigationTitle("Storage")
+                    .navigationTitle("Склад")
                     
                     
                     Button {
                         viewStore.send(.closeStorage)
                     } label: {
-                        Text("Close")
+                        Text("Закрити")
                     }
                     
                 }
@@ -48,21 +48,6 @@ struct StorageDomainView: View {
                     viewStore.send(.initialize)
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-            }
-        }
-    }
-}
-    
-
-extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
             }
         }
     }
