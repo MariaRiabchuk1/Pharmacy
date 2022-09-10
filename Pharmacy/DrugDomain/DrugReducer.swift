@@ -21,6 +21,12 @@ public let drugReducer = DrugReducer.combine(
         case .dismiss(let isActive):
             state.detailSheetisActive = isActive
             return .none
+        case .incrButtonTapped:
+            state.drug.dvCount += 1
+            return .none
+        case .decrButtonTapped:
+            state.drug.dvCount -= 1
+            return .none
         }
     }
 ).debug()

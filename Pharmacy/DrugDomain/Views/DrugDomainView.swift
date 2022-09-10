@@ -68,6 +68,32 @@ public struct DrugDetailDomainView: View {
                         .padding()
                         .font(.system(size: 16))
                     
+                    
+                    Group {
+                        VStack {
+                            Text("\(viewStore.drug.dvCount)")
+                            
+                            HStack {
+                                Button {
+                                    viewStore.send(.incrButtonTapped)
+                                } label: {
+                                    Text("+")
+                                        .frame(width: 30, height: 30, alignment: .center)
+                                        .background(Color.green)
+                                }
+                                
+                                Button {
+                                    viewStore.send(.decrButtonTapped)
+                                } label: {
+                                    Text("-")
+                                        .frame(width: 30, height: 30, alignment: .center)
+                                        .background(Color.red)
+                                }
+                            }
+                        }
+                    }
+                    
+                    
                     Spacer()
                     
                     Button {

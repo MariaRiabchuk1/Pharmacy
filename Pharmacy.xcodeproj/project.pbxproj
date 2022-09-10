@@ -157,13 +157,21 @@
 		071ABF0828CD223200E769E8 /* DrugDomain */ = {
 			isa = PBXGroup;
 			children = (
+				071ABF1328CD31C400E769E8 /* Views */,
 				071ABF0928CD224700E769E8 /* DrugState.swift */,
 				071ABF0B28CD224F00E769E8 /* DrugAction.swift */,
 				071ABF0D28CD225800E769E8 /* DrugEnvironment.swift */,
 				071ABF0F28CD226300E769E8 /* DrugReducer.swift */,
-				071ABF1128CD267C00E769E8 /* DrugDomainView.swift */,
 			);
 			path = DrugDomain;
+			sourceTree = "<group>";
+		};
+		071ABF1328CD31C400E769E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				071ABF1128CD267C00E769E8 /* DrugDomainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CEB5AD1D28CA0A2400579BAB /* Frameworks */ = {

@@ -13,6 +13,9 @@ public enum DrugAction: Equatable {
     case openDetail
     case dismiss(Bool)
     
+    case incrButtonTapped
+    case decrButtonTapped
+    
     // MARK: User interaction
     
 }

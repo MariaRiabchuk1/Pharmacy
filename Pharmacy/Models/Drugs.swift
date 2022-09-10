@@ -12,21 +12,21 @@ public struct Drugs: Equatable, Hashable {
     let name: String
     let image: String
     let description: String
-    let totalCount: Int
-    let dvCount: Int
-    let edaCount: Int
-    let edsCount: Int
-    let fvCount: Int
-    let ivCount: Int
-    let nvCount: Int
-    let pgvCount: Int
-    let pvCount: Int
-    let rvCount: Int
-    let trvCount: Int
-    let tvCount: Int
-    let vaitCount: Int
-    let vpdCount: Int
-    let xvCount: Int
+    var totalCount: Int
+    var dvCount: Int
+    var edaCount: Int
+    var edsCount: Int
+    var fvCount: Int
+    var ivCount: Int
+    var nvCount: Int
+    var pgvCount: Int
+    var pvCount: Int
+    var rvCount: Int
+    var trvCount: Int
+    var tvCount: Int
+    var vaitCount: Int
+    var vpdCount: Int
+    var xvCount: Int
     
     public init(name: String, image: String, description: String, totalCount: Int, dvCount: Int, edaCount: Int, edsCount: Int, fvCount: Int, ivCount: Int, nvCount: Int, pgvCount: Int, pvCount: Int, rvCount: Int, trvCount: Int, tvCount: Int, vaitCount: Int, vpdCount: Int, xvCount: Int) {
         self.name = name
