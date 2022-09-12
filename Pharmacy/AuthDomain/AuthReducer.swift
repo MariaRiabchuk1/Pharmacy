@@ -31,7 +31,13 @@ public let authReducer = AuthReducer.combine(
             }
         case .successLogedIn(let user):
             state.isUserValid = true
-            print("success")
+            return .task {
+                let manager = APIManager()
+                let user = try await manager.getCurrentUser()
+                return .setCurrentUser(user)
+            }
+        case .setCurrentUser(let user):
+            state.dashboardState.currentUser = user
             return .none
         case .dismiss(let isValid):
             return .none

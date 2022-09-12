@@ -32,16 +32,25 @@ public let storageReducer = StorageReducer.combine(
                 }
             }
         case .setDrugs(let drugs):
-            
             let drugsState: [DrugState] = drugs.map {
                 .init(drug: $0)
             }
             
             state.drugsState = drugsState
+            state.originDrugsState = drugsState
             return .none
         case .closeStorage:
             return .none
         case .searchTextChange(let text):
+            if text != "" {
+                let drugsState: [DrugState] = state.drugsState.filter {
+                    $0.drug.name.hasPrefix(text)
+                }
+                
+                state.drugsState = drugsState
+            } else {
+                state.drugsState = state.originDrugsState
+            }
             return .none
         case .drugsAction(index: let index, action: let action):
             return .none

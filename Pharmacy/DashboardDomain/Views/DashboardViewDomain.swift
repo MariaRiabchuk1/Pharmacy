@@ -68,14 +68,16 @@ struct DashboardViewDomain: View {
                 }
                 
                 HStack(spacing: 100) {
-                    buildButton(title: "Storage") {
-                        viewStore.send(.storageButtonTapped)
+                    if viewStore.state.currentUser?.rules == "admin" {
+                        buildButton(title: "Storage") {
+                            viewStore.send(.storageButtonTapped)
+                            
+                        }
                         
-                    }
-                    
-                    buildButton(title: "Drugs") {
-                        viewStore.send(.drugsButtonTapped)
-                        
+                        buildButton(title: "Drugs") {
+                            viewStore.send(.drugsButtonTapped)
+                            
+                        }
                     }
                 }
             }
@@ -102,11 +104,26 @@ struct DashboardViewDomain: View {
                         .font(.system(size: 25))
                         .fontWeight(.medium)
                        
-                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do")
                 }
                 .padding()
                 
                 Spacer()
+                
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("Добрий день,")
+                        
+                        Text(viewStore.state.currentUser?.userName ?? "Імя")
+                            .bold()
+                    }
+                    .padding()
+                    Image(systemName: "person")
+                        .resizable()
+                        .frame(width: 50, height: 80, alignment: .center)
+                }
+                .padding()
+                .padding(.horizontal, 20)
             }
             .padding(.leading, 60)
             .frame(maxWidth: .infinity, minHeight: 90, maxHeight: 100, alignment: .center)

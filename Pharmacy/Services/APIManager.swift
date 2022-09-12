@@ -15,6 +15,7 @@ import FirebaseFirestore
 class APIManager {
     
     let db: Firestore?
+    let auth = AuthService()
     
     init() {
         db = Firestore.firestore()
@@ -44,6 +45,26 @@ class APIManager {
                   vpdCount: $0.data()["vpdCount"] as? Int ?? 0,
                   xvCount: $0.data()["xvCount"] as? Int ?? 0)
         } ?? []
+    }
+    
+    func fetchUsers() async throws -> [MedicalUser] {
+        let snapshot = try await db?.collection("users").getDocuments()
+        
+        return snapshot?.documents.compactMap {
+            MedicalUser(userName: $0.data()["userName"] as? String ?? "",
+                 email: $0.data()["email"] as? String ?? "",
+                    rules: $0.data()["rules"] as? String ?? "",
+                 userID: $0.data()["userID"] as? String ?? "",
+                 icon: $0.data()["icon"] as? String ?? "")
+        } ?? []
+    }
+    
+    func getCurrentUser() async throws -> MedicalUser? {
+        guard let currentUser = await auth.getCurrentUser() else {
+            return nil
+        }
+        
+        return try await fetchUsers().first { $0.userID == currentUser.uid }
     }
     
     func write(name: String, image: String, description: String, count: Int) {

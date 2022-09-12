@@ -13,6 +13,7 @@ public struct DashboardState: Equatable {
     
     public var selectedCell: String = ""
     public var drugs: [Drugs] = []
+    public var currentUser: MedicalUser?
     
     public var isWebApplicationActive = false
     public var isStorageActive = false

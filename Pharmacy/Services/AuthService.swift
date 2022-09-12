@@ -15,4 +15,8 @@ public actor AuthService {
         let result = try await Auth.auth().signIn(withEmail: email, password: password)
         return result.user
     }
+    
+    func getCurrentUser() -> User? {
+        Auth.auth().currentUser
+    }
 }

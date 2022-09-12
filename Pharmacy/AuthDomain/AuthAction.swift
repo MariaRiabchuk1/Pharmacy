@@ -9,8 +9,7 @@ import Foundation
 import FirebaseAuth
 import ComposableArchitecture
 
-public enum AuthAction: Equatable {
-    
+public enum AuthAction: Equatable {    
     case initialize
     
     case dismiss(Bool)
@@ -18,6 +17,8 @@ public enum AuthAction: Equatable {
     case logInButtonTapped
     case emailQueryChanged(String)
     case passwordQueryChanged(String)
+    
+    case setCurrentUser(MedicalUser?)
     
     // States
     case alertConfirmTapped

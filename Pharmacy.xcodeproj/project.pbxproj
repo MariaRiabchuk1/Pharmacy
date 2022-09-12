@@ -34,6 +34,7 @@
 		071ABF2228CD39FE00E769E8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF2128CD39FE00E769E8 /* AuthService.swift */; };
 		071ABF2428CD3BDD00E769E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 071ABF2328CD3BDD00E769E8 /* FirebaseAuth */; };
 		0727E37A28CBB892009020DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0727E37928CBB892009020DD /* GoogleService-Info.plist */; };
+		07F3FE8A28CFB62C00123DEA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3FE8928CFB62C00123DEA /* User.swift */; };
 		CEB5AD1F28CA0A2400579BAB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD1E28CA0A2400579BAB /* ComposableArchitecture */; };
 		CEB5AD2428CA0CB700579BAB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2328CA0CB700579BAB /* FirebaseAnalytics */; };
 		CEB5AD2628CA0CB700579BAB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2528CA0CB700579BAB /* FirebaseDatabase */; };
@@ -80,6 +81,7 @@
 		071ABF1E28CD391C00E769E8 /* AuthDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDomainView.swift; sourceTree = "<group>"; };
 		071ABF2128CD39FE00E769E8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		0727E37928CBB892009020DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		07F3FE8928CFB62C00123DEA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CEB5AD2928CA0DF700579BAB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CEBC21D728C4C92700C06630 /* Pharmacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pharmacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC21DA28C4C92700C06630 /* PharmacyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyApp.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				071ABF0328CD11F200E769E8 /* Drugs.swift */,
 				071ABF0528CD120B00E769E8 /* Departments.swift */,
+				07F3FE8928CFB62C00123DEA /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -387,6 +390,7 @@
 				071ABF0428CD11F200E769E8 /* Drugs.swift in Sources */,
 				071ABF0628CD120B00E769E8 /* Departments.swift in Sources */,
 				071ABEFC28CBD34C00E769E8 /* StorageEnvironment.swift in Sources */,
+				07F3FE8A28CFB62C00123DEA /* User.swift in Sources */,
 				071ABF0C28CD224F00E769E8 /* DrugAction.swift in Sources */,
 				CEBC21FE28C9D8E900C06630 /* WebApplicationAction.swift in Sources */,
 				071ABF1628CD38F500E769E8 /* AuthState.swift in Sources */,

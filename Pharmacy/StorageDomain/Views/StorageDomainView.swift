@@ -30,9 +30,6 @@ struct StorageDomainView: View {
                             DrugDomainView(store: $0)
                         }
                     }
-                    .searchable(text: viewStore.binding(get: \.searchText, send: StorageAction.searchTextChange))
-                    .navigationTitle("Склад")
-                    
                     
                     Button {
                         viewStore.send(.closeStorage)
@@ -41,6 +38,8 @@ struct StorageDomainView: View {
                     }
                     
                 }
+                .navigationTitle("Склад")
+                .searchable(text: viewStore.binding(get: \.searchText, send: StorageAction.searchTextChange))
                 .refreshable {
                     viewStore.send(.initialize)
                 }
