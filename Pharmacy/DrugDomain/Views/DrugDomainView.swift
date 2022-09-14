@@ -56,6 +56,7 @@ public struct DrugDetailDomainView: View {
                 }
                 
                 Divider()
+                    .background(Color.summerGreen)
                 Spacer()
                 
                 VStack(alignment: .leading) {
@@ -66,28 +67,41 @@ public struct DrugDetailDomainView: View {
                     Text(viewStore.drug.description)
                         .padding()
                         .font(.system(size: 16))
+                        .frame(height: 300, alignment: .top)
                     
                     
                     Group {
                         VStack {
-                            Text("\(viewStore.drug.dvCount)")
-                            
+                            Spacer()
                             HStack {
-                                Button {
-                                    viewStore.send(.incrButtonTapped)
-                                } label: {
-                                    Text("+")
-                                        .frame(width: 30, height: 30, alignment: .center)
-                                        .background(Color.green)
-                                }
-                                
+                                Spacer()
                                 Button {
                                     viewStore.send(.decrButtonTapped)
                                 } label: {
-                                    Text("-")
-                                        .frame(width: 30, height: 30, alignment: .center)
-                                        .background(Color.red)
+                                    Text("←")
+                                        .frame(width: 70, height: 35, alignment: .center)
+                                        .background(Color.summerGreen)
+                                        .foregroundColor(Color.black)
+                                        .cornerRadius(10)
+                                        .font(.system(size: 25))
                                 }
+                                
+                                Text("\(viewStore.drug.dvCount)")
+                                    .frame(width: 70, height: 35, alignment: .center)
+                                    .font(.system(.title2))
+                                
+                                Button {
+                                    viewStore.send(.incrButtonTapped)
+                                } label: {
+                                    Text("→")
+                                        .frame(width: 70, height: 35, alignment: .center)
+                                        .background(Color.summerGreen)
+                                        .foregroundColor(Color.black)
+                                        .cornerRadius(10)
+                                        .font(.system(size: 25))
+                                    
+                                }
+                                Spacer()
                             }
                         }
                     }
@@ -101,8 +115,8 @@ public struct DrugDetailDomainView: View {
                         Text("Закрити")
                     }
                     .frame(width: 100, height: 40, alignment: .center)
-                    .foregroundColor(Color.white)
-                    .background(Color.blue)
+                    .foregroundColor(Color.black)
+                    .background(Color.summerGreen)
                     .cornerRadius(10)
                     
                 }

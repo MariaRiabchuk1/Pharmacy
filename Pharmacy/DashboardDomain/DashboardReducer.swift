@@ -36,12 +36,12 @@ public let reducer = DashboardReducer.combine(
             state.isWebApplicationActive = true
             return .none
         case .googleButtonTapped:
-            guard let url = URL(string: "https://google.com") else { return .none }
+            guard let url = URL(string: "https://knp-rakhiv-rl.com.ua") else { return .none }
             state.webApplicationState.currentURL = url
             state.isWebApplicationActive = true
             return .none
         case .gmailButtonTapped:
-            guard let url = URL(string: "https://www.knp-rakhiv-rl.com.ua") else { return .none }
+            guard let url = URL(string: "https://webmail.adm.tools") else { return .none }
             state.webApplicationState.currentURL = url
             state.isWebApplicationActive = true
             return .none

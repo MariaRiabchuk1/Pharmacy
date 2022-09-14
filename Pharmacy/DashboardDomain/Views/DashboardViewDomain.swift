@@ -54,7 +54,7 @@ struct DashboardViewDomain: View {
             VStack(spacing: 50) {
                 
                 HStack(spacing: 100) {
-                    buildButton(title: "Google") {
+                    buildButton(title: "Site") {
                         viewStore.send(.googleButtonTapped)
                     }
                     
@@ -62,7 +62,7 @@ struct DashboardViewDomain: View {
                         viewStore.send(.medicsButtonTapped)
                     }
                     
-                    buildButton(title: "Gmail") {
+                    buildButton(title: "WebMail") {
                         viewStore.send(.gmailButtonTapped)
                     }
                 }
@@ -114,7 +114,7 @@ struct DashboardViewDomain: View {
                     VStack(alignment: .leading) {
                         Text("Добрий день,")
                         
-                        Text(viewStore.state.currentUser?.userName ?? "Імя")
+                        Text(viewStore.state.currentUser?.userName ?? "Ім'я")
                             .bold()
                     }
                     .padding()

@@ -50,7 +50,7 @@ public let authReducer = AuthReducer.combine(
             state.passwordQuery = query
             return .none
         case .failedLogedIn:
-            state.alert = AlertState(title: .init("Frong user"), message: .init("Frong user"), dismissButton: .default(.init("Cancel"), send: .alertConfirmTapped))
+            state.alert = AlertState(title: .init("Wrong user"), message: .init("Wrong user"), dismissButton: .default(.init("Cancel"), send: .alertConfirmTapped))
             
             return .none
         case .alertConfirmTapped:
