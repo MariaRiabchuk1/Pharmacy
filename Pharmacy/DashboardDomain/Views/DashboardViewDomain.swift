@@ -55,7 +55,7 @@ struct DashboardViewDomain: View {
                 
                 HStack(spacing: 100) {
                     buildButton(title: "Site") {
-                        viewStore.send(.googleButtonTapped)
+                        viewStore.send(.knpButtonTapped)
                     }
                     
                     buildButton(title: "Medics") {
@@ -68,14 +68,17 @@ struct DashboardViewDomain: View {
                 }
                 
                 HStack(spacing: 100) {
+                    buildButton(title: "Google") {
+                        viewStore.send(.googleButtonTapped)
+                    }
+                    
+                    buildButton(title: "Drugs") {
+                        viewStore.send(.drugsButtonTapped)
+                    }
+                    
                     if viewStore.state.currentUser?.rules == "admin" {
                         buildButton(title: "Storage") {
                             viewStore.send(.storageButtonTapped)
-                            
-                        }
-                        
-                        buildButton(title: "Drugs") {
-                            viewStore.send(.drugsButtonTapped)
                             
                         }
                     }
