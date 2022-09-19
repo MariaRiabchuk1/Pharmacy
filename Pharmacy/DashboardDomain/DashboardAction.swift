@@ -22,7 +22,6 @@ public enum DashboardAction: Equatable {
     case gmailButtonTapped
     case storageButtonTapped
     case drugsButtonTapped
-    case knpButtonTapped
     
     case webApplicationAction(WebApplicationAction)
     case storageAction(StorageAction)
