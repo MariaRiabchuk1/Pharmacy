@@ -52,10 +52,9 @@ struct DashboardViewDomain: View {
     var dashboard: some View {
         WithViewStore(store) { viewStore in
             VStack(spacing: 50) {
-                
                 HStack(spacing: 100) {
-                    buildButton(title: "Site") {
-                        viewStore.send(.googleButtonTapped)
+                    buildButton(title: "Site")  {
+                        viewStore.send(.knpButtonTapped)
                     }
                     
                     buildButton(title: "Medics") {
@@ -68,16 +67,20 @@ struct DashboardViewDomain: View {
                 }
                 
                 HStack(spacing: 100) {
+                    buildButton(title: "Google") {
+                        viewStore.send(.googleButtonTapped)
+                    }
+                    buildButton(title: "Recipe") {
+                        viewStore.send(.drugsButtonTapped)
+                    }
+                    
                     if viewStore.state.currentUser?.rules == "admin" {
                         buildButton(title: "Storage") {
                             viewStore.send(.storageButtonTapped)
                             
                         }
                         
-                        buildButton(title: "Drugs") {
-                            viewStore.send(.drugsButtonTapped)
-                            
-                        }
+
                     }
                 }
             }
@@ -93,7 +96,7 @@ struct DashboardViewDomain: View {
                 // TODO: Sasha | replace by logo image
                 Image("logo")
                     .resizable()
-                    .frame(width: 70, height: 80, alignment:.center)
+                    .frame(width: 80, height: 100, alignment: .center)
                     .background(Color.white)
                     .shadow(radius: 0)
                 
@@ -104,9 +107,10 @@ struct DashboardViewDomain: View {
                         .font(.system(size: 25))
                         .fontWeight(.medium)
                        
-                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do")
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.")
                 }
                 .padding()
+                .frame(width: 800, height: 105)
                 
                 Spacer()
                 
@@ -120,7 +124,7 @@ struct DashboardViewDomain: View {
                     .padding()
                     Image(systemName: "person")
                         .resizable()
-                        .frame(width: 50, height: 80, alignment: .center)
+                        .frame(width: 50, height: 60, alignment: .center)
                 }
                 .padding()
                 .padding(.horizontal, 20)
@@ -128,7 +132,7 @@ struct DashboardViewDomain: View {
             .padding(.leading, 60)
             .frame(maxWidth: .infinity, minHeight: 90, maxHeight: 100, alignment: .center)
             .background(Color.summerGreen)
-            .shadow(radius: 7)
+            .shadow(radius: 4)
         }
     }
 }

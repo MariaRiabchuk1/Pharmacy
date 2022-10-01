@@ -25,22 +25,24 @@ struct AuthDomainView: View {
                     .frame(width: 150, height: 200, alignment:.center)
                     .background(Color.white)
                     .shadow(radius: 0)
-                    .padding()
+                    .padding(40)
                 
-                Text("Логін")
+                Text("КНП")
+                    .font(.system(size: 30))
+                Text("«Рахівська районна лікарня»")
                     .font(.system(size: 30))
                 
                 Spacer()
                 
                 TextField(
-                    "Емайл",
+                    "Email",
                     text: viewStore.binding(
                         get: \.emailQuery, send: AuthAction.emailQueryChanged
                     )
                 )
                 .disableAutocorrection(true)
                 .textInputAutocapitalization(.never)
-                .frame(width: 200, height: 50, alignment: .center)
+                .frame(width: 250, height: 50, alignment: .center)
                 .textFieldStyle(.roundedBorder)
                 
                 SecureField(
@@ -51,7 +53,7 @@ struct AuthDomainView: View {
                 )
                 .disableAutocorrection(true)
                 .textInputAutocapitalization(.never)
-                .frame(width: 200, height: 50, alignment: .center)
+                .frame(width: 250, height: 50, alignment: .center)
                 .textFieldStyle(.roundedBorder)
                 
                 Spacer()
@@ -60,7 +62,7 @@ struct AuthDomainView: View {
                     viewStore.send(.logInButtonTapped)
                 } label: {
                     Text("Логін")
-                        .frame(width: 100, height: 50, alignment: .center)
+                        .frame(width: 200, height: 50, alignment: .center)
                         .foregroundColor(Color.white)
                         .background(Color.summerGreen)
                         .cornerRadius(10)
