@@ -56,7 +56,7 @@ public struct DrugDetailDomainView: View {
                 }
                 
                 Divider()
-                    .background(Color.summerGreen)
+                    .background(Color.medYellow)
                 Spacer()
                 
                 VStack(alignment: .leading) {
@@ -78,9 +78,9 @@ public struct DrugDetailDomainView: View {
                                 Button {
                                     viewStore.send(.decrButtonTapped)
                                 } label: {
-                                    Text("←")
+                                    Text("-")
                                         .frame(width: 70, height: 35, alignment: .center)
-                                        .background(Color.summerGreen)
+                                        .background(Color.medYellow)
                                         .foregroundColor(Color.black)
                                         .cornerRadius(10)
                                         .font(.system(size: 25))
@@ -93,9 +93,9 @@ public struct DrugDetailDomainView: View {
                                 Button {
                                     viewStore.send(.incrButtonTapped)
                                 } label: {
-                                    Text("→")
+                                    Text("+")
                                         .frame(width: 70, height: 35, alignment: .center)
-                                        .background(Color.summerGreen)
+                                        .background(Color.medYellow)
                                         .foregroundColor(Color.black)
                                         .cornerRadius(10)
                                         .font(.system(size: 25))
@@ -116,7 +116,7 @@ public struct DrugDetailDomainView: View {
                     }
                     .frame(width: 100, height: 40, alignment: .center)
                     .foregroundColor(Color.black)
-                    .background(Color.summerGreen)
+                    .background(Color.medYellow)
                     .cornerRadius(10)
                     
                 }

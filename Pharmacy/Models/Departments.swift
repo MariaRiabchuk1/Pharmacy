@@ -31,33 +31,33 @@ extension Departments {
     var fullName: String {
         switch self {
         case .vait:
-            return ""
+            return "Відділення анестезіології та інтенсивної терапії"
         case .vpd:
-            return ""
+            return "Відділення паліативної допомоги"
         case .dv:
-            return ""
+            return "Дитяче відділення"
         case .iv:
-            return ""
+            return "Інфекційне відділення"
         case .nv:
-            return ""
+            return "Неврологічне відділення"
         case .pv:
-            return ""
+            return "Поліклінічне відділення"
         case .pgv:
-            return ""
+            return "Пологово-гінекологічне відділення"
         case .rv:
-            return ""
+            return "Реабілітаційне відділення"
         case .tv:
-            return ""
+            return "Терапевтичне відділення"
         case .trv:
-            return ""
+            return "Травматологічне відділення"
         case .fv:
-            return ""
+            return "Фізіотерапевтичне відділення"
         case .xv:
-            return ""
+            return "Хірургічне відділення"
         case .eda:
-            return ""
+            return "Відділення екстренної (невідкладної) медичної допомоги (амб)"
         case .eds:
-            return ""
+            return "Відділення екстренної (невідкладної) медичної допомоги (стац)"
         }
     }
 }

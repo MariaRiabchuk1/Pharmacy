@@ -63,8 +63,8 @@ struct AuthDomainView: View {
                 } label: {
                     Text("Логін")
                         .frame(width: 200, height: 50, alignment: .center)
-                        .foregroundColor(Color.white)
-                        .background(Color.summerGreen)
+                        .foregroundColor(Color.black)
+                        .background(Color.medYellow)
                         .cornerRadius(10)
                 }
                 .alert(
@@ -89,7 +89,7 @@ struct AuthDomainView: View {
             
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-        .background(Color.summerGreen)
+        .background(Color.medYellow)
         
     }
 }

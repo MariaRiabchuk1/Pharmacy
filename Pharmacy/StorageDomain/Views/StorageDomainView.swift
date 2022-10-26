@@ -30,13 +30,16 @@ struct StorageDomainView: View {
                             DrugDomainView(store: $0)
                         }
                     }
-                    
+
+                }
+                .toolbar {
                     Button {
                         viewStore.send(.closeStorage)
                     } label: {
                         Text("Закрити")
+                            .frame(width: 100, height: 60, alignment: .center)
+                            .foregroundColor(Color.black)
                     }
-                    
                 }
                 .navigationTitle("Склад")
                 .searchable(text: viewStore.binding(get: \.searchText, send: StorageAction.searchTextChange))
