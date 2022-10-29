@@ -127,11 +127,11 @@
 		CE5DDEC1290D48DD007415FF /* DashboardDomain */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DDEC6290D48DD007415FF /* Views */,
 				CE5DDEC2290D48DD007415FF /* DashboardState.swift */,
 				CE5DDEC3290D48DD007415FF /* DashboardEnvironment.swift */,
 				CE5DDEC4290D48DD007415FF /* DashboardReducer.swift */,
 				CE5DDEC5290D48DD007415FF /* DashboardAction.swift */,
-				CE5DDEC6290D48DD007415FF /* Views */,
 			);
 			path = DashboardDomain;
 			sourceTree = "<group>";
@@ -147,10 +147,10 @@
 		CE5DDECD290D4925007415FF /* AuthDomain */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DDED1290D4925007415FF /* Views */,
 				CE5DDECE290D4925007415FF /* AuthState.swift */,
 				CE5DDECF290D4925007415FF /* AuthReducer.swift */,
 				CE5DDED0290D4925007415FF /* AuthAction.swift */,
-				CE5DDED1290D4925007415FF /* Views */,
 				CE5DDED3290D4925007415FF /* AuthEnvironment.swift */,
 			);
 			path = AuthDomain;
@@ -167,10 +167,10 @@
 		CE5DDED9290D4938007415FF /* DrugDomain */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DDEDD290D4938007415FF /* Views */,
 				CE5DDEDA290D4938007415FF /* DrugReducer.swift */,
 				CE5DDEDB290D4938007415FF /* DrugEnvironment.swift */,
 				CE5DDEDC290D4938007415FF /* DrugState.swift */,
-				CE5DDEDD290D4938007415FF /* Views */,
 				CE5DDEDF290D4938007415FF /* DrugAction.swift */,
 			);
 			path = DrugDomain;
@@ -187,11 +187,11 @@
 		CE5DDEE5290D4947007415FF /* StorageDomain */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DDEEA290D4947007415FF /* Views */,
 				CE5DDEE6290D4947007415FF /* StorageReducer.swift */,
 				CE5DDEE7290D4947007415FF /* StorageEnvironment.swift */,
 				CE5DDEE8290D4947007415FF /* StorageState.swift */,
 				CE5DDEE9290D4947007415FF /* StorageAction.swift */,
-				CE5DDEEA290D4947007415FF /* Views */,
 			);
 			path = StorageDomain;
 			sourceTree = "<group>";
@@ -233,11 +233,11 @@
 		CE5DDEFB290D4996007415FF /* WebApplicationDomain */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DDF00290D4996007415FF /* Views */,
 				CE5DDEFC290D4996007415FF /* WebApplicationState.swift */,
 				CE5DDEFD290D4996007415FF /* WebApplicationReducer.swift */,
 				CE5DDEFE290D4996007415FF /* WebApplicationAction.swift */,
 				CE5DDEFF290D4996007415FF /* WebApplicationEnvironment.swift */,
-				CE5DDF00290D4996007415FF /* Views */,
 			);
 			path = WebApplicationDomain;
 			sourceTree = "<group>";
