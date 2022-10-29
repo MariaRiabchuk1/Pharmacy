@@ -7,92 +7,94 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0715542328C6781B00E8877B /* DashboardViewDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542228C6781B00E8877B /* DashboardViewDomain.swift */; };
-		0715542728C6785600E8877B /* DashboardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542628C6785600E8877B /* DashboardState.swift */; };
-		0715542928C6786E00E8877B /* DashboardAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542828C6786E00E8877B /* DashboardAction.swift */; };
-		0715542B28C6787900E8877B /* DashboardEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542A28C6787900E8877B /* DashboardEnvironment.swift */; };
-		0715542D28C6788200E8877B /* DashboardReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715542C28C6788200E8877B /* DashboardReducer.swift */; };
-		071ABEF228CBB90600E769E8 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF128CBB90600E769E8 /* SafariView.swift */; };
-		071ABEF528CBBA3D00E769E8 /* Color+customColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF428CBBA3D00E769E8 /* Color+customColor.swift */; };
-		071ABEF828CBD33800E769E8 /* StorageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF728CBD33800E769E8 /* StorageState.swift */; };
-		071ABEFA28CBD34100E769E8 /* StorageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEF928CBD34100E769E8 /* StorageAction.swift */; };
-		071ABEFC28CBD34C00E769E8 /* StorageEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEFB28CBD34C00E769E8 /* StorageEnvironment.swift */; };
-		071ABEFE28CBD35500E769E8 /* StorageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABEFD28CBD35500E769E8 /* StorageReducer.swift */; };
-		071ABF0128CBD4C400E769E8 /* StorageDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0028CBD4C400E769E8 /* StorageDomainView.swift */; };
-		071ABF0428CD11F200E769E8 /* Drugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0328CD11F200E769E8 /* Drugs.swift */; };
-		071ABF0628CD120B00E769E8 /* Departments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0528CD120B00E769E8 /* Departments.swift */; };
-		071ABF0A28CD224700E769E8 /* DrugState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0928CD224700E769E8 /* DrugState.swift */; };
-		071ABF0C28CD224F00E769E8 /* DrugAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0B28CD224F00E769E8 /* DrugAction.swift */; };
-		071ABF0E28CD225800E769E8 /* DrugEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0D28CD225800E769E8 /* DrugEnvironment.swift */; };
-		071ABF1028CD226300E769E8 /* DrugReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF0F28CD226300E769E8 /* DrugReducer.swift */; };
-		071ABF1228CD267C00E769E8 /* DrugDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF1128CD267C00E769E8 /* DrugDomainView.swift */; };
-		071ABF1628CD38F500E769E8 /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF1528CD38F500E769E8 /* AuthState.swift */; };
-		071ABF1828CD38FC00E769E8 /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF1728CD38FC00E769E8 /* AuthAction.swift */; };
-		071ABF1A28CD390600E769E8 /* AuthEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF1928CD390600E769E8 /* AuthEnvironment.swift */; };
-		071ABF1C28CD390C00E769E8 /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF1B28CD390C00E769E8 /* AuthReducer.swift */; };
-		071ABF1F28CD391C00E769E8 /* AuthDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF1E28CD391C00E769E8 /* AuthDomainView.swift */; };
-		071ABF2228CD39FE00E769E8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071ABF2128CD39FE00E769E8 /* AuthService.swift */; };
 		071ABF2428CD3BDD00E769E8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 071ABF2328CD3BDD00E769E8 /* FirebaseAuth */; };
-		0727E37A28CBB892009020DD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0727E37928CBB892009020DD /* GoogleService-Info.plist */; };
-		07F3FE8A28CFB62C00123DEA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F3FE8928CFB62C00123DEA /* User.swift */; };
+		CE5DDEBF290D4888007415FF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEBD290D4887007415FF /* AuthService.swift */; };
+		CE5DDEC0290D4888007415FF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEBE290D4887007415FF /* APIManager.swift */; };
+		CE5DDEC8290D48DD007415FF /* DashboardState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEC2290D48DD007415FF /* DashboardState.swift */; };
+		CE5DDEC9290D48DD007415FF /* DashboardEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEC3290D48DD007415FF /* DashboardEnvironment.swift */; };
+		CE5DDECA290D48DD007415FF /* DashboardReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEC4290D48DD007415FF /* DashboardReducer.swift */; };
+		CE5DDECB290D48DD007415FF /* DashboardAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEC5290D48DD007415FF /* DashboardAction.swift */; };
+		CE5DDECC290D48DD007415FF /* DashboardViewDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEC7290D48DD007415FF /* DashboardViewDomain.swift */; };
+		CE5DDED4290D4925007415FF /* AuthState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDECE290D4925007415FF /* AuthState.swift */; };
+		CE5DDED5290D4925007415FF /* AuthReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDECF290D4925007415FF /* AuthReducer.swift */; };
+		CE5DDED6290D4925007415FF /* AuthAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDED0290D4925007415FF /* AuthAction.swift */; };
+		CE5DDED7290D4925007415FF /* AuthDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDED2290D4925007415FF /* AuthDomainView.swift */; };
+		CE5DDED8290D4925007415FF /* AuthEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDED3290D4925007415FF /* AuthEnvironment.swift */; };
+		CE5DDEE0290D4938007415FF /* DrugReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEDA290D4938007415FF /* DrugReducer.swift */; };
+		CE5DDEE1290D4938007415FF /* DrugEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEDB290D4938007415FF /* DrugEnvironment.swift */; };
+		CE5DDEE2290D4938007415FF /* DrugState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEDC290D4938007415FF /* DrugState.swift */; };
+		CE5DDEE3290D4938007415FF /* DrugDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEDE290D4938007415FF /* DrugDomainView.swift */; };
+		CE5DDEE4290D4938007415FF /* DrugAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEDF290D4938007415FF /* DrugAction.swift */; };
+		CE5DDEEC290D4947007415FF /* StorageReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEE6290D4947007415FF /* StorageReducer.swift */; };
+		CE5DDEED290D4947007415FF /* StorageEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEE7290D4947007415FF /* StorageEnvironment.swift */; };
+		CE5DDEEE290D4947007415FF /* StorageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEE8290D4947007415FF /* StorageState.swift */; };
+		CE5DDEEF290D4947007415FF /* StorageAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEE9290D4947007415FF /* StorageAction.swift */; };
+		CE5DDEF0290D4947007415FF /* StorageDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEEB290D4947007415FF /* StorageDomainView.swift */; };
+		CE5DDEF3290D4962007415FF /* Color+customColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEF2290D4962007415FF /* Color+customColor.swift */; };
+		CE5DDEF6290D4985007415FF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDEF5290D4985007415FF /* Preview Assets.xcassets */; };
+		CE5DDF03290D4996007415FF /* Departments.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEF8290D4996007415FF /* Departments.swift */; };
+		CE5DDF04290D4996007415FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEF9290D4996007415FF /* User.swift */; };
+		CE5DDF05290D4996007415FF /* Drugs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEFA290D4996007415FF /* Drugs.swift */; };
+		CE5DDF06290D4996007415FF /* WebApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEFC290D4996007415FF /* WebApplicationState.swift */; };
+		CE5DDF07290D4996007415FF /* WebApplicationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEFD290D4996007415FF /* WebApplicationReducer.swift */; };
+		CE5DDF08290D4996007415FF /* WebApplicationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEFE290D4996007415FF /* WebApplicationAction.swift */; };
+		CE5DDF09290D4996007415FF /* WebApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDEFF290D4996007415FF /* WebApplicationEnvironment.swift */; };
+		CE5DDF0A290D4996007415FF /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDF01290D4996007415FF /* SafariView.swift */; };
+		CE5DDF0B290D4996007415FF /* WebApplicationDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5DDF02290D4996007415FF /* WebApplicationDomainView.swift */; };
+		CE5DDF12290D4A04007415FF /* GoogleService-Info_TEST.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDF11290D4A04007415FF /* GoogleService-Info_TEST.plist */; };
+		CE5DDF14290D4A0E007415FF /* GoogleService-Info-PROD.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDF13290D4A0E007415FF /* GoogleService-Info-PROD.plist */; };
+		CE5DDF19290D4A72007415FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE5DDF10290D49DF007415FF /* Assets.xcassets */; };
 		CEB5AD1F28CA0A2400579BAB /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD1E28CA0A2400579BAB /* ComposableArchitecture */; };
 		CEB5AD2428CA0CB700579BAB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2328CA0CB700579BAB /* FirebaseAnalytics */; };
 		CEB5AD2628CA0CB700579BAB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2528CA0CB700579BAB /* FirebaseDatabase */; };
 		CEB5AD2828CA0CB700579BAB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2728CA0CB700579BAB /* FirebaseStorage */; };
-		CEB5AD2A28CA0DF700579BAB /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB5AD2928CA0DF700579BAB /* APIManager.swift */; };
 		CEB5AD2D28CA100700579BAB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2C28CA100700579BAB /* FirebaseFirestore */; };
 		CEB5AD2F28CA100700579BAB /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = CEB5AD2E28CA100700579BAB /* FirebaseFirestoreCombine-Community */; };
 		CEBC21DB28C4C92700C06630 /* PharmacyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21DA28C4C92700C06630 /* PharmacyApp.swift */; };
-		CEBC21DF28C4C92900C06630 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC21DE28C4C92900C06630 /* Assets.xcassets */; };
-		CEBC21E228C4C92900C06630 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEBC21E128C4C92900C06630 /* Preview Assets.xcassets */; };
 		CEBC21F528C9D1AC00C06630 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21F428C9D1AC00C06630 /* AppDelegate.swift */; };
-		CEBC21F928C9D87400C06630 /* WebApplicationDomainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21F828C9D87400C06630 /* WebApplicationDomainView.swift */; };
-		CEBC21FC28C9D8CE00C06630 /* WebApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21FB28C9D8CE00C06630 /* WebApplicationState.swift */; };
-		CEBC21FE28C9D8E900C06630 /* WebApplicationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21FD28C9D8E900C06630 /* WebApplicationAction.swift */; };
-		CEBC220028C9D8FF00C06630 /* WebApplicationEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC21FF28C9D8FF00C06630 /* WebApplicationEnvironment.swift */; };
-		CEBC220228C9D92F00C06630 /* WebApplicationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBC220128C9D92F00C06630 /* WebApplicationReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0715542228C6781B00E8877B /* DashboardViewDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewDomain.swift; sourceTree = "<group>"; };
-		0715542628C6785600E8877B /* DashboardState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardState.swift; sourceTree = "<group>"; };
-		0715542828C6786E00E8877B /* DashboardAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardAction.swift; sourceTree = "<group>"; };
-		0715542A28C6787900E8877B /* DashboardEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEnvironment.swift; sourceTree = "<group>"; };
-		0715542C28C6788200E8877B /* DashboardReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardReducer.swift; sourceTree = "<group>"; };
-		071ABEF128CBB90600E769E8 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
-		071ABEF428CBBA3D00E769E8 /* Color+customColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+customColor.swift"; sourceTree = "<group>"; };
-		071ABEF728CBD33800E769E8 /* StorageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageState.swift; sourceTree = "<group>"; };
-		071ABEF928CBD34100E769E8 /* StorageAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAction.swift; sourceTree = "<group>"; };
-		071ABEFB28CBD34C00E769E8 /* StorageEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageEnvironment.swift; sourceTree = "<group>"; };
-		071ABEFD28CBD35500E769E8 /* StorageReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageReducer.swift; sourceTree = "<group>"; };
-		071ABF0028CBD4C400E769E8 /* StorageDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageDomainView.swift; sourceTree = "<group>"; };
-		071ABF0328CD11F200E769E8 /* Drugs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drugs.swift; sourceTree = "<group>"; };
-		071ABF0528CD120B00E769E8 /* Departments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Departments.swift; sourceTree = "<group>"; };
 		071ABF0728CD1C4800E769E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		071ABF0928CD224700E769E8 /* DrugState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugState.swift; sourceTree = "<group>"; };
-		071ABF0B28CD224F00E769E8 /* DrugAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugAction.swift; sourceTree = "<group>"; };
-		071ABF0D28CD225800E769E8 /* DrugEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugEnvironment.swift; sourceTree = "<group>"; };
-		071ABF0F28CD226300E769E8 /* DrugReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugReducer.swift; sourceTree = "<group>"; };
-		071ABF1128CD267C00E769E8 /* DrugDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrugDomainView.swift; sourceTree = "<group>"; };
-		071ABF1528CD38F500E769E8 /* AuthState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
-		071ABF1728CD38FC00E769E8 /* AuthAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAction.swift; sourceTree = "<group>"; };
-		071ABF1928CD390600E769E8 /* AuthEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnvironment.swift; sourceTree = "<group>"; };
-		071ABF1B28CD390C00E769E8 /* AuthReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
-		071ABF1E28CD391C00E769E8 /* AuthDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDomainView.swift; sourceTree = "<group>"; };
-		071ABF2128CD39FE00E769E8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		0727E37928CBB892009020DD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		07F3FE8928CFB62C00123DEA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		CEB5AD2928CA0DF700579BAB /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CE5DDEBD290D4887007415FF /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CE5DDEBE290D4887007415FF /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		CE5DDEC2290D48DD007415FF /* DashboardState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardState.swift; sourceTree = "<group>"; };
+		CE5DDEC3290D48DD007415FF /* DashboardEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardEnvironment.swift; sourceTree = "<group>"; };
+		CE5DDEC4290D48DD007415FF /* DashboardReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardReducer.swift; sourceTree = "<group>"; };
+		CE5DDEC5290D48DD007415FF /* DashboardAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardAction.swift; sourceTree = "<group>"; };
+		CE5DDEC7290D48DD007415FF /* DashboardViewDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewDomain.swift; sourceTree = "<group>"; };
+		CE5DDECE290D4925007415FF /* AuthState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthState.swift; sourceTree = "<group>"; };
+		CE5DDECF290D4925007415FF /* AuthReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthReducer.swift; sourceTree = "<group>"; };
+		CE5DDED0290D4925007415FF /* AuthAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthAction.swift; sourceTree = "<group>"; };
+		CE5DDED2290D4925007415FF /* AuthDomainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthDomainView.swift; sourceTree = "<group>"; };
+		CE5DDED3290D4925007415FF /* AuthEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthEnvironment.swift; sourceTree = "<group>"; };
+		CE5DDEDA290D4938007415FF /* DrugReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugReducer.swift; sourceTree = "<group>"; };
+		CE5DDEDB290D4938007415FF /* DrugEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugEnvironment.swift; sourceTree = "<group>"; };
+		CE5DDEDC290D4938007415FF /* DrugState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugState.swift; sourceTree = "<group>"; };
+		CE5DDEDE290D4938007415FF /* DrugDomainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugDomainView.swift; sourceTree = "<group>"; };
+		CE5DDEDF290D4938007415FF /* DrugAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugAction.swift; sourceTree = "<group>"; };
+		CE5DDEE6290D4947007415FF /* StorageReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageReducer.swift; sourceTree = "<group>"; };
+		CE5DDEE7290D4947007415FF /* StorageEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageEnvironment.swift; sourceTree = "<group>"; };
+		CE5DDEE8290D4947007415FF /* StorageState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageState.swift; sourceTree = "<group>"; };
+		CE5DDEE9290D4947007415FF /* StorageAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageAction.swift; sourceTree = "<group>"; };
+		CE5DDEEB290D4947007415FF /* StorageDomainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageDomainView.swift; sourceTree = "<group>"; };
+		CE5DDEF2290D4962007415FF /* Color+customColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+customColor.swift"; sourceTree = "<group>"; };
+		CE5DDEF5290D4985007415FF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE5DDEF8290D4996007415FF /* Departments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Departments.swift; sourceTree = "<group>"; };
+		CE5DDEF9290D4996007415FF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE5DDEFA290D4996007415FF /* Drugs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drugs.swift; sourceTree = "<group>"; };
+		CE5DDEFC290D4996007415FF /* WebApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApplicationState.swift; sourceTree = "<group>"; };
+		CE5DDEFD290D4996007415FF /* WebApplicationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApplicationReducer.swift; sourceTree = "<group>"; };
+		CE5DDEFE290D4996007415FF /* WebApplicationAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApplicationAction.swift; sourceTree = "<group>"; };
+		CE5DDEFF290D4996007415FF /* WebApplicationEnvironment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApplicationEnvironment.swift; sourceTree = "<group>"; };
+		CE5DDF01290D4996007415FF /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		CE5DDF02290D4996007415FF /* WebApplicationDomainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApplicationDomainView.swift; sourceTree = "<group>"; };
+		CE5DDF10290D49DF007415FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE5DDF11290D4A04007415FF /* GoogleService-Info_TEST.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info_TEST.plist"; sourceTree = "<group>"; };
+		CE5DDF13290D4A0E007415FF /* GoogleService-Info-PROD.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-PROD.plist"; sourceTree = "<group>"; };
 		CEBC21D728C4C92700C06630 /* Pharmacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pharmacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBC21DA28C4C92700C06630 /* PharmacyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PharmacyApp.swift; sourceTree = "<group>"; };
-		CEBC21DE28C4C92900C06630 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CEBC21E128C4C92900C06630 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEBC21F428C9D1AC00C06630 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEBC21F828C9D87400C06630 /* WebApplicationDomainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApplicationDomainView.swift; sourceTree = "<group>"; };
-		CEBC21FB28C9D8CE00C06630 /* WebApplicationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApplicationState.swift; sourceTree = "<group>"; };
-		CEBC21FD28C9D8E900C06630 /* WebApplicationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApplicationAction.swift; sourceTree = "<group>"; };
-		CEBC21FF28C9D8FF00C06630 /* WebApplicationEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApplicationEnvironment.swift; sourceTree = "<group>"; };
-		CEBC220128C9D92F00C06630 /* WebApplicationReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebApplicationReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,111 +115,140 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0715542028C677DB00E8877B /* DashboardDomain */ = {
+		071ABF2028CD39E400E769E8 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0715542428C6781F00E8877B /* Views */,
-				0715542628C6785600E8877B /* DashboardState.swift */,
-				0715542828C6786E00E8877B /* DashboardAction.swift */,
-				0715542A28C6787900E8877B /* DashboardEnvironment.swift */,
-				0715542C28C6788200E8877B /* DashboardReducer.swift */,
+				CE5DDEBE290D4887007415FF /* APIManager.swift */,
+				CE5DDEBD290D4887007415FF /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE5DDEC1290D48DD007415FF /* DashboardDomain */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEC2290D48DD007415FF /* DashboardState.swift */,
+				CE5DDEC3290D48DD007415FF /* DashboardEnvironment.swift */,
+				CE5DDEC4290D48DD007415FF /* DashboardReducer.swift */,
+				CE5DDEC5290D48DD007415FF /* DashboardAction.swift */,
+				CE5DDEC6290D48DD007415FF /* Views */,
 			);
 			path = DashboardDomain;
 			sourceTree = "<group>";
 		};
-		0715542428C6781F00E8877B /* Views */ = {
+		CE5DDEC6290D48DD007415FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0715542228C6781B00E8877B /* DashboardViewDomain.swift */,
+				CE5DDEC7290D48DD007415FF /* DashboardViewDomain.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		071ABEF328CBBA1F00E769E8 /* Extensions */ = {
+		CE5DDECD290D4925007415FF /* AuthDomain */ = {
 			isa = PBXGroup;
 			children = (
-				071ABEF428CBBA3D00E769E8 /* Color+customColor.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		071ABEF628CBD32500E769E8 /* StorageDomain */ = {
-			isa = PBXGroup;
-			children = (
-				071ABEFF28CBD4B400E769E8 /* Views */,
-				071ABEF728CBD33800E769E8 /* StorageState.swift */,
-				071ABEF928CBD34100E769E8 /* StorageAction.swift */,
-				071ABEFB28CBD34C00E769E8 /* StorageEnvironment.swift */,
-				071ABEFD28CBD35500E769E8 /* StorageReducer.swift */,
-			);
-			path = StorageDomain;
-			sourceTree = "<group>";
-		};
-		071ABEFF28CBD4B400E769E8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				071ABF0028CBD4C400E769E8 /* StorageDomainView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		071ABF0228CD11BD00E769E8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				071ABF0328CD11F200E769E8 /* Drugs.swift */,
-				071ABF0528CD120B00E769E8 /* Departments.swift */,
-				07F3FE8928CFB62C00123DEA /* User.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		071ABF0828CD223200E769E8 /* DrugDomain */ = {
-			isa = PBXGroup;
-			children = (
-				071ABF1328CD31C400E769E8 /* Views */,
-				071ABF0928CD224700E769E8 /* DrugState.swift */,
-				071ABF0B28CD224F00E769E8 /* DrugAction.swift */,
-				071ABF0D28CD225800E769E8 /* DrugEnvironment.swift */,
-				071ABF0F28CD226300E769E8 /* DrugReducer.swift */,
-			);
-			path = DrugDomain;
-			sourceTree = "<group>";
-		};
-		071ABF1328CD31C400E769E8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				071ABF1128CD267C00E769E8 /* DrugDomainView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		071ABF1428CD38E900E769E8 /* AuthDomain */ = {
-			isa = PBXGroup;
-			children = (
-				071ABF1D28CD391000E769E8 /* Views */,
-				071ABF1528CD38F500E769E8 /* AuthState.swift */,
-				071ABF1728CD38FC00E769E8 /* AuthAction.swift */,
-				071ABF1928CD390600E769E8 /* AuthEnvironment.swift */,
-				071ABF1B28CD390C00E769E8 /* AuthReducer.swift */,
+				CE5DDECE290D4925007415FF /* AuthState.swift */,
+				CE5DDECF290D4925007415FF /* AuthReducer.swift */,
+				CE5DDED0290D4925007415FF /* AuthAction.swift */,
+				CE5DDED1290D4925007415FF /* Views */,
+				CE5DDED3290D4925007415FF /* AuthEnvironment.swift */,
 			);
 			path = AuthDomain;
 			sourceTree = "<group>";
 		};
-		071ABF1D28CD391000E769E8 /* Views */ = {
+		CE5DDED1290D4925007415FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				071ABF1E28CD391C00E769E8 /* AuthDomainView.swift */,
+				CE5DDED2290D4925007415FF /* AuthDomainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		071ABF2028CD39E400E769E8 /* Services */ = {
+		CE5DDED9290D4938007415FF /* DrugDomain */ = {
 			isa = PBXGroup;
 			children = (
-				CEB5AD2928CA0DF700579BAB /* APIManager.swift */,
-				071ABF2128CD39FE00E769E8 /* AuthService.swift */,
+				CE5DDEDA290D4938007415FF /* DrugReducer.swift */,
+				CE5DDEDB290D4938007415FF /* DrugEnvironment.swift */,
+				CE5DDEDC290D4938007415FF /* DrugState.swift */,
+				CE5DDEDD290D4938007415FF /* Views */,
+				CE5DDEDF290D4938007415FF /* DrugAction.swift */,
 			);
-			path = Services;
+			path = DrugDomain;
+			sourceTree = "<group>";
+		};
+		CE5DDEDD290D4938007415FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEDE290D4938007415FF /* DrugDomainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE5DDEE5290D4947007415FF /* StorageDomain */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEE6290D4947007415FF /* StorageReducer.swift */,
+				CE5DDEE7290D4947007415FF /* StorageEnvironment.swift */,
+				CE5DDEE8290D4947007415FF /* StorageState.swift */,
+				CE5DDEE9290D4947007415FF /* StorageAction.swift */,
+				CE5DDEEA290D4947007415FF /* Views */,
+			);
+			path = StorageDomain;
+			sourceTree = "<group>";
+		};
+		CE5DDEEA290D4947007415FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEEB290D4947007415FF /* StorageDomainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE5DDEF1290D4962007415FF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEF2290D4962007415FF /* Color+customColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CE5DDEF4290D4985007415FF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEF5290D4985007415FF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE5DDEF7290D4996007415FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEF8290D4996007415FF /* Departments.swift */,
+				CE5DDEF9290D4996007415FF /* User.swift */,
+				CE5DDEFA290D4996007415FF /* Drugs.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE5DDEFB290D4996007415FF /* WebApplicationDomain */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDEFC290D4996007415FF /* WebApplicationState.swift */,
+				CE5DDEFD290D4996007415FF /* WebApplicationReducer.swift */,
+				CE5DDEFE290D4996007415FF /* WebApplicationAction.swift */,
+				CE5DDEFF290D4996007415FF /* WebApplicationEnvironment.swift */,
+				CE5DDF00290D4996007415FF /* Views */,
+			);
+			path = WebApplicationDomain;
+			sourceTree = "<group>";
+		};
+		CE5DDF00290D4996007415FF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DDF01290D4996007415FF /* SafariView.swift */,
+				CE5DDF02290D4996007415FF /* WebApplicationDomainView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		CEB5AD1D28CA0A2400579BAB /* Frameworks */ = {
@@ -248,50 +279,22 @@
 			isa = PBXGroup;
 			children = (
 				071ABF2028CD39E400E769E8 /* Services */,
-				071ABF1428CD38E900E769E8 /* AuthDomain */,
-				071ABF0828CD223200E769E8 /* DrugDomain */,
+				CE5DDECD290D4925007415FF /* AuthDomain */,
+				CE5DDED9290D4938007415FF /* DrugDomain */,
 				071ABF0728CD1C4800E769E8 /* Info.plist */,
-				071ABF0228CD11BD00E769E8 /* Models */,
-				071ABEF628CBD32500E769E8 /* StorageDomain */,
-				071ABEF328CBBA1F00E769E8 /* Extensions */,
-				0727E37928CBB892009020DD /* GoogleService-Info.plist */,
-				CEBC21FA28C9D87900C06630 /* WebApplicationDomain */,
-				0715542028C677DB00E8877B /* DashboardDomain */,
+				CE5DDEC1290D48DD007415FF /* DashboardDomain */,
+				CE5DDEE5290D4947007415FF /* StorageDomain */,
+				CE5DDEF1290D4962007415FF /* Extensions */,
+				CE5DDEF4290D4985007415FF /* Preview Content */,
+				CE5DDEF7290D4996007415FF /* Models */,
+				CE5DDEFB290D4996007415FF /* WebApplicationDomain */,
 				CEBC21DA28C4C92700C06630 /* PharmacyApp.swift */,
+				CE5DDF11290D4A04007415FF /* GoogleService-Info_TEST.plist */,
+				CE5DDF13290D4A0E007415FF /* GoogleService-Info-PROD.plist */,
 				CEBC21F428C9D1AC00C06630 /* AppDelegate.swift */,
-				CEBC21DE28C4C92900C06630 /* Assets.xcassets */,
-				CEBC21E028C4C92900C06630 /* Preview Content */,
+				CE5DDF10290D49DF007415FF /* Assets.xcassets */,
 			);
 			path = Pharmacy;
-			sourceTree = "<group>";
-		};
-		CEBC21E028C4C92900C06630 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				CEBC21E128C4C92900C06630 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CEBC21FA28C9D87900C06630 /* WebApplicationDomain */ = {
-			isa = PBXGroup;
-			children = (
-				CEBC220328C9DA2600C06630 /* Views */,
-				CEBC21FB28C9D8CE00C06630 /* WebApplicationState.swift */,
-				CEBC21FD28C9D8E900C06630 /* WebApplicationAction.swift */,
-				CEBC21FF28C9D8FF00C06630 /* WebApplicationEnvironment.swift */,
-				CEBC220128C9D92F00C06630 /* WebApplicationReducer.swift */,
-			);
-			path = WebApplicationDomain;
-			sourceTree = "<group>";
-		};
-		CEBC220328C9DA2600C06630 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CEBC21F828C9D87400C06630 /* WebApplicationDomainView.swift */,
-				071ABEF128CBB90600E769E8 /* SafariView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,9 +369,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBC21E228C4C92900C06630 /* Preview Assets.xcassets in Resources */,
-				0727E37A28CBB892009020DD /* GoogleService-Info.plist in Resources */,
-				CEBC21DF28C4C92900C06630 /* Assets.xcassets in Resources */,
+				CE5DDF19290D4A72007415FF /* Assets.xcassets in Resources */,
+				CE5DDF14290D4A0E007415FF /* GoogleService-Info-PROD.plist in Resources */,
+				CE5DDEF6290D4985007415FF /* Preview Assets.xcassets in Resources */,
+				CE5DDF12290D4A04007415FF /* GoogleService-Info_TEST.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,40 +383,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEBC21FC28C9D8CE00C06630 /* WebApplicationState.swift in Sources */,
 				CEBC21F528C9D1AC00C06630 /* AppDelegate.swift in Sources */,
-				071ABF0128CBD4C400E769E8 /* StorageDomainView.swift in Sources */,
-				CEBC220228C9D92F00C06630 /* WebApplicationReducer.swift in Sources */,
-				071ABEF828CBD33800E769E8 /* StorageState.swift in Sources */,
-				071ABEF228CBB90600E769E8 /* SafariView.swift in Sources */,
+				CE5DDF0B290D4996007415FF /* WebApplicationDomainView.swift in Sources */,
+				CE5DDEE0290D4938007415FF /* DrugReducer.swift in Sources */,
+				CE5DDEE1290D4938007415FF /* DrugEnvironment.swift in Sources */,
+				CE5DDEEE290D4947007415FF /* StorageState.swift in Sources */,
 				CEBC21DB28C4C92700C06630 /* PharmacyApp.swift in Sources */,
-				CEBC220028C9D8FF00C06630 /* WebApplicationEnvironment.swift in Sources */,
-				071ABF0428CD11F200E769E8 /* Drugs.swift in Sources */,
-				071ABF0628CD120B00E769E8 /* Departments.swift in Sources */,
-				071ABEFC28CBD34C00E769E8 /* StorageEnvironment.swift in Sources */,
-				07F3FE8A28CFB62C00123DEA /* User.swift in Sources */,
-				071ABF0C28CD224F00E769E8 /* DrugAction.swift in Sources */,
-				CEBC21FE28C9D8E900C06630 /* WebApplicationAction.swift in Sources */,
-				071ABF1628CD38F500E769E8 /* AuthState.swift in Sources */,
-				0715542B28C6787900E8877B /* DashboardEnvironment.swift in Sources */,
-				0715542328C6781B00E8877B /* DashboardViewDomain.swift in Sources */,
-				0715542D28C6788200E8877B /* DashboardReducer.swift in Sources */,
-				071ABF1A28CD390600E769E8 /* AuthEnvironment.swift in Sources */,
-				0715542928C6786E00E8877B /* DashboardAction.swift in Sources */,
-				071ABEFE28CBD35500E769E8 /* StorageReducer.swift in Sources */,
-				071ABF1F28CD391C00E769E8 /* AuthDomainView.swift in Sources */,
-				071ABF0E28CD225800E769E8 /* DrugEnvironment.swift in Sources */,
-				071ABEF528CBBA3D00E769E8 /* Color+customColor.swift in Sources */,
-				071ABF1C28CD390C00E769E8 /* AuthReducer.swift in Sources */,
-				CEB5AD2A28CA0DF700579BAB /* APIManager.swift in Sources */,
-				0715542728C6785600E8877B /* DashboardState.swift in Sources */,
-				071ABF1028CD226300E769E8 /* DrugReducer.swift in Sources */,
-				071ABF2228CD39FE00E769E8 /* AuthService.swift in Sources */,
-				071ABF1228CD267C00E769E8 /* DrugDomainView.swift in Sources */,
-				071ABF0A28CD224700E769E8 /* DrugState.swift in Sources */,
-				071ABEFA28CBD34100E769E8 /* StorageAction.swift in Sources */,
-				071ABF1828CD38FC00E769E8 /* AuthAction.swift in Sources */,
-				CEBC21F928C9D87400C06630 /* WebApplicationDomainView.swift in Sources */,
+				CE5DDF05290D4996007415FF /* Drugs.swift in Sources */,
+				CE5DDF09290D4996007415FF /* WebApplicationEnvironment.swift in Sources */,
+				CE5DDECB290D48DD007415FF /* DashboardAction.swift in Sources */,
+				CE5DDED5290D4925007415FF /* AuthReducer.swift in Sources */,
+				CE5DDEF0290D4947007415FF /* StorageDomainView.swift in Sources */,
+				CE5DDEC0290D4888007415FF /* APIManager.swift in Sources */,
+				CE5DDEE4290D4938007415FF /* DrugAction.swift in Sources */,
+				CE5DDEC9290D48DD007415FF /* DashboardEnvironment.swift in Sources */,
+				CE5DDF06290D4996007415FF /* WebApplicationState.swift in Sources */,
+				CE5DDF08290D4996007415FF /* WebApplicationAction.swift in Sources */,
+				CE5DDEE3290D4938007415FF /* DrugDomainView.swift in Sources */,
+				CE5DDEC8290D48DD007415FF /* DashboardState.swift in Sources */,
+				CE5DDECC290D48DD007415FF /* DashboardViewDomain.swift in Sources */,
+				CE5DDED6290D4925007415FF /* AuthAction.swift in Sources */,
+				CE5DDEED290D4947007415FF /* StorageEnvironment.swift in Sources */,
+				CE5DDEE2290D4938007415FF /* DrugState.swift in Sources */,
+				CE5DDEBF290D4888007415FF /* AuthService.swift in Sources */,
+				CE5DDED4290D4925007415FF /* AuthState.swift in Sources */,
+				CE5DDEEC290D4947007415FF /* StorageReducer.swift in Sources */,
+				CE5DDF03290D4996007415FF /* Departments.swift in Sources */,
+				CE5DDED8290D4925007415FF /* AuthEnvironment.swift in Sources */,
+				CE5DDF0A290D4996007415FF /* SafariView.swift in Sources */,
+				CE5DDECA290D48DD007415FF /* DashboardReducer.swift in Sources */,
+				CE5DDF07290D4996007415FF /* WebApplicationReducer.swift in Sources */,
+				CE5DDEF3290D4962007415FF /* Color+customColor.swift in Sources */,
+				CE5DDF04290D4996007415FF /* User.swift in Sources */,
+				CE5DDED7290D4925007415FF /* AuthDomainView.swift in Sources */,
+				CE5DDEEF290D4947007415FF /* StorageAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
