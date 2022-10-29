@@ -53,34 +53,31 @@ struct DashboardViewDomain: View {
         WithViewStore(store) { viewStore in
             VStack(spacing: 50) {
                 HStack(spacing: 100) {
-                    buildButton(title: "Site")  {
-                        viewStore.send(.knpButtonTapped)
+                    buildButton(title: "Google", image: "google", subTitle: "Відкрити сторінку Google")  {
+                        viewStore.send(.googleButtonTapped)
                     }
                     
-                    buildButton(title: "Medics") {
+                    buildButton(title: "Medics", image: "medics", subTitle: "Відкрити сторінку Medics") {
                         viewStore.send(.medicsButtonTapped)
                     }
                     
-                    buildButton(title: "WebMail") {
+                    buildButton(title: "WebMail", image: "mail", subTitle: "Відкрити сторінку WebMail") {
                         viewStore.send(.gmailButtonTapped)
                     }
                 }
                 
                 HStack(spacing: 100) {
-                    buildButton(title: "Google") {
-                        viewStore.send(.googleButtonTapped)
+                    buildButton(title: "Site", image: "site", subTitle: "Відкрити офіційну сторінку лікарні") {
+                        viewStore.send(.knpButtonTapped)
                     }
-                    buildButton(title: "Recipe") {
+                    buildButton(title: "Recipe", image: "recipe", subTitle: "Виписати рецепт") {
                         viewStore.send(.drugsButtonTapped)
                     }
                     
                     if viewStore.state.currentUser?.rules == "admin" {
-                        buildButton(title: "Storage") {
+                        buildButton(title: "Storage", image: "storage", subTitle: "Склад ліків") {
                             viewStore.send(.storageButtonTapped)
-                            
                         }
-                        
-
                     }
                 }
             }
@@ -88,6 +85,7 @@ struct DashboardViewDomain: View {
             .background(Color.white)
         }
     }
+
     
     var navigationBar: some View {
         // Navigation bar
@@ -150,14 +148,14 @@ struct DashboardViewDomain_Previews: PreviewProvider {
 
 extension DashboardViewDomain {
     @ViewBuilder
-    private func buildButton(title: String, action: @escaping () -> Void) -> some View {
+    private func buildButton(title: String, image: String, subTitle: String, action: @escaping () -> Void) -> some View {
         Button {
             action()
         } label: {
             VStack {
-                Image(systemName: "doc")
+                Image(image)
                     .resizable()
-                    .frame(width: 50, height: 60, alignment: .center)
+                    .frame(width: 80, height: 80, alignment: .center)
                     .foregroundColor(.black)
                 
                 Spacer()
@@ -167,10 +165,11 @@ extension DashboardViewDomain {
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                 
-                Text("Subtitle")
-                    .font(.system(size: 20))
+                Text(subTitle)
+                    .font(.system(size: 17))
                     .fontWeight(.medium)
                     .foregroundColor(.black)
+                    .frame(width: 230)
             }
             .padding(35)
             .frame(width: 250, height: 250, alignment: .center)
