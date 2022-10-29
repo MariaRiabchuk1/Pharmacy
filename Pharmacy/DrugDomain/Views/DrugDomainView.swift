@@ -56,61 +56,63 @@ public struct DrugDetailDomainView: View {
                 }
                 
                 Divider()
-                    .background(Color.summerGreen)
+                    .background(Color.customYellow)
                 Spacer()
                 
                 ScrollView {
                     VStack(alignment: .leading) {
-                        Text(viewStore.drug.name)
-                            .padding()
-                            .font(.system(size: 30, weight: .bold, design: .default))
+                        VStack(alignment: .leading) {
+                            Text(viewStore.drug.name)
+                                .padding()
+                                .font(.system(size: 30, weight: .bold, design: .default))
+                            
+                            Text(viewStore.drug.description)
+                                .padding()
+                                .font(.system(size: 16))
+                        }
+                        .padding(10)
                         
-                        Text(viewStore.drug.description)
-                            .padding()
-                            .font(.system(size: 16))
-                            .frame(height: 300, alignment: .top)
-                        
-                        
-                        Group {
-                            VStack {
-                                Spacer()
-                                HStack {
-                                    allCountsView(viewStore)
-                                }
+                        VStack(alignment: .leading) {
+                            Text("Залишок")
+                                .font(.system(size: 24, weight: .bold, design: .default))
+                            Spacer()
+                            HStack {
+                                allCountsView(viewStore)
                             }
                         }
+                        .padding(.horizontal, 30)
                         
                         
                         Spacer()
                         
-                        Button {
-                            viewStore.send(.dismiss(false))
-                        } label: {
-                            Text("Закрити")
+                        HStack(spacing: 0) {
+                            Button {
+                                viewStore.send(.dismiss(false))
+                            } label: {
+                                Text("Закрити")
+                            }
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 18, weight: .bold, design: .default))
+                            .background(Color.gray)
+                            
+                            Button {
+                                viewStore.send(.save)
+                            } label: {
+                                Text("Save")
+                            }
+                            .frame(maxWidth: .infinity, minHeight: 50)
+                            .foregroundColor(Color.white)
+                            .font(.system(size: 18, weight: .bold, design: .default))
+                            .background(Color.customYellow)
                         }
-                        .frame(width: 100, height: 40, alignment: .center)
-                        .foregroundColor(Color.black)
-                        .background(Color.summerGreen)
-                        .cornerRadius(10)
-                        
-                        Button {
-                            viewStore.send(.save)
-                        } label: {
-                            Text("Save")
-                        }
-                        .frame(width: 100, height: 40, alignment: .center)
-                        .foregroundColor(Color.black)
-                        .background(Color.summerGreen)
-                        .cornerRadius(10)
-                        
+                        .padding(.top, 50)
                     }
                 }
-                .padding(30)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                 .background(Color.white)
                 .cornerRadius(10)
                 .shadow(radius: 10)
-                .padding(30)
                 
             }
             .padding()
@@ -336,10 +338,10 @@ public struct DrugDetailDomainView: View {
     
     @ViewBuilder
     func drugCountView(_ viewStore: ViewStore<DrugState, DrugAction>,
-                             title: String,
-                             count: Int,
-                             increaseAction: @escaping () -> Void,
-                             decreaseAction: @escaping () -> Void) -> some View {
+                       title: String,
+                       count: Int,
+                       increaseAction: @escaping () -> Void,
+                       decreaseAction: @escaping () -> Void) -> some View {
         HStack(alignment: .firstTextBaseline) {
             Text(title)
             Spacer()
@@ -357,7 +359,7 @@ public struct DrugDetailDomainView: View {
     func increaseButton(action: @escaping () -> Void) -> some View {
         Button("←", action: action)
             .frame(width: 70, height: 35, alignment: .center)
-            .background(Color.summerGreen)
+            .background(Color.customYellow)
             .foregroundColor(Color.black)
             .cornerRadius(10)
             .font(.system(size: 25))
@@ -366,7 +368,7 @@ public struct DrugDetailDomainView: View {
     func decreaseButton(action: @escaping () -> Void) -> some View {
         Button("→", action: action)
             .frame(width: 70, height: 35, alignment: .center)
-            .background(Color.summerGreen)
+            .background(Color.customYellow)
             .foregroundColor(Color.black)
             .cornerRadius(10)
             .font(.system(size: 25))

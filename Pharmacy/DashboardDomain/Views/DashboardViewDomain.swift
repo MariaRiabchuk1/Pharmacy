@@ -129,9 +129,9 @@ struct DashboardViewDomain: View {
                 .padding()
                 .padding(.horizontal, 20)
             }
-            .padding(.leading, 61)
+            .padding(.leading, 60)
             .frame(maxWidth: .infinity, minHeight: 90, maxHeight: 100, alignment: .center)
-            .background(Color.summerGreen)
+            .background(Color.customYellow)
             .shadow(radius: 4)
         }
     }

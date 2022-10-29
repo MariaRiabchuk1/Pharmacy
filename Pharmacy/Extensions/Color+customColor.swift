@@ -9,5 +9,5 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    static let summerGreen = Color(red: 0.57, green: 0.74, blue: 0.69)
+    static let customYellow = Color(red: 0.57, green: 0.74, blue: 0.69)
 }
